@@ -1,0 +1,12 @@
+.header
+  .header-logo,
+  .header-navigation
+    +type(24)
+    line-height: $line-height-base
+  .header-contact
+    .header-contact-email
+      transition: opacity 0.3s
+      opacity: 0
+    &:hover
+      .header-contact-email
+        opacity: 1

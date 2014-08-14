@@ -1,0 +1,38 @@
+body
+  background: $base-background-color
+  color: $base-text-color
+  @extend %type-body
+  min-width: 320px
+
+.wrapper
+  padding: 96px 0
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
+  display: none !important
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  font-family: inherit
+  color: inherit
+  padding: 0
+  @extend %type-heading
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table, fieldset,
+figure, pre
+  margin: 0
+  margin-bottom: 24px
+
+p
+  &.last
+    margin-bottom: 0
+
+// hide flash of unstyled text
+html
+  body
+    opacity: 1
+  &.wf-loading
+    body
+      opacity: 0

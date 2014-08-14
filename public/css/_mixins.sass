@@ -1,0 +1,10 @@
+=clearfix
+  &:before,
+  &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+=type($size)
+  font-size: #{$size / 16}em

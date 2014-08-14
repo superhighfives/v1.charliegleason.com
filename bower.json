@@ -1,0 +1,9 @@
+{
+  "name": "Charlie",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "modernizr": "~2.7",
+    "bootstrap-sass": "~3.0.2"
+  }
+}
