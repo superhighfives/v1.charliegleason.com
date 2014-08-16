@@ -6,10 +6,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ page.title }} / Charlie Gleason</title>
+  <title><%- page %> / <%- title %></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="//cloud.typography.com/7039052/624944/css/fonts.css" />
 </head>
 <body>
   
@@ -19,24 +20,15 @@
         <div class="row">
           
           <div class="col-md-2">
-            <h1 class="header-logo"><a href="/">Charlie Gleason</a></h1>
+            <h1 class="header-logo"><a href="/"><%- title %></a></h1>
           </div>
 
           <div class="col-md-8">
-            <ul class="header-navigation list-inline">
-              <li><a href="/about">About / Resum&eacute;</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/writing">Writing</a></li>
-              <li class="header-contact"><a href="mailto:hi@charliegleason.com">Contact <span class="header-contact-email">hi@charliegleason.com</span></a></li>
-            </ul>
+            <%- partial("_shared/_navigation") %>
           </div>
 
           <div class="col-md-2">
-            <ul class="list-inline">
-              <li><a href="#" class="social-icon">Twitter</a></li>
-              <li><a href="#" class="social-icon">Github</a></li>
-              <li><a href="#" class="social-icon">Dribbble</a></li>
-            </ul>
+            <%- partial("_shared/_social") %>
           </div>
 
         </div>
@@ -46,7 +38,11 @@
     <div class="main" role="main">
       <div class="container">
         <div class="row">
-          {{ content }}
+          <% if(current.published !== false || environment=='development') { %>
+            <%- yield %>
+          <% } else { %>
+            <%- partial("404") %>
+          <% } %>
         </div>
       </div>
     </div>

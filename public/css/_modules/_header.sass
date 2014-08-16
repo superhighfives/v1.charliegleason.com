@@ -1,8 +1,22 @@
 .header
   .header-logo,
-  .header-navigation
-    +type(24)
+  .header-navigation,
+  .header-social
+    @extend %type-heading
+    +type(23)
     line-height: $line-height-base
+    margin-bottom: 48px
+  .header-logo
+    a
+      color: $color-black
+  .header-navigation
+    .selected
+      border-bottom: 2px solid $color-red
+      &:hover
+        border-bottom-color: $color-black
+  .header-social
+    max-height: 30px
+    margin-bottom: 0
   .header-contact
     .header-contact-email
       transition: opacity 0.3s

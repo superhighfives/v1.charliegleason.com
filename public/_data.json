@@ -1,0 +1,14 @@
+{
+  "index": {
+    "page": "Home"
+  },
+  "about": {
+    "page": "About"
+  },
+  "writing": {
+    "page": "Writing"
+  },
+  "404": {
+    "page": "Oh no!"
+  }
+}

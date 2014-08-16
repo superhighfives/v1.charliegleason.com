@@ -1,0 +1,19 @@
+{
+  "index": {
+    "page": "Writing"
+  },
+
+  "posts": {
+    "hello-world": {
+      "title": "Hello World.",
+      "type": "project",
+      "date": "2013-02-28",
+      "published": false
+    },
+    "hello-brazil": {
+      "title": "Hello Brazil.",
+      "type": "project",
+      "date": "2013-03-04"
+    }
+  }
+}
