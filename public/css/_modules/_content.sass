@@ -1,7 +1,36 @@
 .content
-  .hero
+  .hero-strapline
     @extend %type-heading
-    +type(30)
+    +type(24)
+    +line-height(24)
+  figure
+    @media (min-width: $screen-lg-min)
+      margin-left: -195px
+    figcaption
+      *:last-child
+        margin-bottom: 0
+      padding: 10px
+      color: $color-light-grey
+      border-bottom: 2px solid $color-off-white
+      +type(14)
+  blockquote
+    padding-top: 0
+    padding-bottom: 0
+    margin: 48px 0
+    border-left: 2px solid $color-off-white
+    p
+      @extend %type-heading
+      @extend %type-light
+      +type(24)
+      font-style: italic
+    footer
+      color: $color-light-grey
+      +type(14)
   p
     +type(18)
     +line-height(30)
+  a
+    border-bottom: solid 2px transparent
+    transition: color 0.3s, background-color 0.3s
+    &:hover
+      border-bottom-color:  $color-off-white

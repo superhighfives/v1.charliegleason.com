@@ -8,15 +8,31 @@ var cp          = require('child_process');
 /**
  * Serve the Harp Site
  */
-gulp.task('serve', function (done) {
-  harp.server('.', {
+gulp.task('serve', function () {
+  harp.server(__dirname, {
     port: 9000
   }, function () {
     browserSync({
-      proxy: "localhost:9000"
+      proxy: "localhost:9000",
+      open: false,
+      /* Hide the notification. It gets annoying */
+      notify: {
+        styles: ['opacity: 0', 'position: absolute']
+      }
     });
-    gulp.watch("public/**/*", ['browser-reload']);
-  });
+    /**
+     * Watch for scss changes, tell BrowserSync to refresh main.css
+     */
+    gulp.watch("public/**/*.sass", function () {
+      reload("main.css", {stream: true});
+    });
+    /**
+     * Watch for all other changes, reload the whole page
+     */
+    gulp.watch(["public/**/*.ejs", "public/**/*.json"], function () {
+      reload();
+    });
+  })
 });
 
 /**
@@ -25,15 +41,6 @@ gulp.task('serve', function (done) {
 gulp.task('build', function (done) {
   cp.exec('harp compile . dist', {stdio: 'inherit'})
     .on('close', done)
-});
-
-/**
- * Browser-sync task, only cares about compiled CSS
- */
-gulp.task('browser-sync', function() {
-  browserSync({
-    proxy: "localhost:9000"
-  });
 });
 
 gulp.task('browser-reload', function() {

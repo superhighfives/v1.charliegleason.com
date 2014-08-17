@@ -4,16 +4,95 @@
   },
 
   "posts": {
-    "hello-world": {
-      "title": "Hello World.",
+    "beginnings-and-endings": {
+      "title": "Beginnings & Endings",
       "type": "project",
-      "date": "2013-02-28",
+      "date": "2013-01-01",
       "published": false
     },
-    "hello-brazil": {
-      "title": "Hello Brazil.",
+    "brightly": {
+      "title": "Brightly",
       "type": "project",
-      "date": "2013-03-04"
+      "date": "2013-01-01",
+      "published": false
+    },
+    "brightly-deux": {
+      "title": "Brightly 2.0",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "cats-of-istanbul": {
+      "title": "Cats Of Istanbul",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "codename": {
+      "title": "Codename",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "goodfilms": {
+      "title": "Goodfilms",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "moran-and-cato": {
+      "title": "Moran & Cato",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "nononono": {
+      "title": "Nononono",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "the-98-against": {
+      "title": "The 98 Against",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "this-kind-of-agility": {
+      "title": "This Kind Of Agility",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "trova": {
+      "title": "Trova",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "tweetflight": {
+      "title": "Tweetflight",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "unbound": {
+      "title": "Unbound",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "you-are-a-developer": {
+      "title": "You Are A Developer, The Internet Is Your Friend",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
+    },
+    "wds13": {
+      "title": "Web Directions South 2013",
+      "type": "project",
+      "date": "2013-01-01",
+      "published": false
     }
   }
 }

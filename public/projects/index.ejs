@@ -1,6 +1,4 @@
 <div class="col-md-push-2 col-md-10 col-md-pull-2">
-  <p>Projects</p>
-
   <% for(slug in public.projects._data.posts) { %>
     <% var project = public.projects._data.posts[slug] %>
     <% if(project.published !== false || environment=='development') { %>
