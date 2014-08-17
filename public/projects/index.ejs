@@ -1,9 +1,29 @@
-<div class="col-md-push-2 col-md-10 col-md-pull-2">
-  <% for(slug in public.projects._data.posts) { %>
-    <% var project = public.projects._data.posts[slug] %>
-    <% if(project.published !== false || environment=='development') { %>
-      <% var classes = project.published == false ? 'unpublished' : '' %>
-      <a class="<%- classes %>" href="/projects/<%- slug %>"><%- project.title %></a>
-    <% } %>
-  <% } %>
+<div class="col-md-2">
+  <div class="sidebar">
+    <p><%- partial("../_shared/_tagline") %></p>
+  </div>
+</div>
+<div class="col-md-8">
+  <div class="projects">
+    <div class="row">
+      <% for(slug in public.projects._data) { %>
+        <% if(slug != "index") { %>
+          <% var project = public.projects._data[slug] %>
+          <% if(project.published !== false || environment=='development') { %>
+            <% var classes = project.published == false ? 'unpublished' : '' %>
+            <div class="col-md-4">
+              <a href="/projects/<%- slug %>" class="project <%- classes %>">
+                <div class="project-image">
+                  <img class="img-responsive" src="/images/projects/<%- slug %>/thumb.jpg" title="<%- project.title %>" %>
+                  <div class="project-teaser"><%- project.teaser %></div>
+                </div>
+                <h2 class="project-title"><%- project.title %></h2>
+                <h3 class="project-date"><%- project.date %></h3>
+              </a>
+            </div>
+          <% } %>
+        <% } %>
+      <% } %>
+    </div>
+  </div>
 </div>

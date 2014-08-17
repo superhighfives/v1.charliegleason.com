@@ -7,18 +7,29 @@
   }
 } %>
 
-<div class="col-md-push-2 col-md-10 col-md-pull-2">
+<div class="col-md-2">
+  <div class="sidebar">
+    <p><%- partial("../_shared/_tagline") %></p>
+  </div>
+</div>
+<div class="col-md-8">
   <div class="posts">
-    <% var articles = public.writing._data.posts; %>
-    <% for(key in articles) { %>
-      <% var article = public.writing._data.posts[key]; %>
-      <% article.formatted_date = parseDate(article.date) %>
-      <div class="post">
-        <%- article.formatted_date.day %>
-        <%- article.formatted_date.month %>
-        <%- article.formatted_date.year %>
-        <%- article.title %>
-      </div>
+    <% for(slug in public.writing._data) { %>
+      <% if(slug != "index") { %>
+        <% var article = public.writing._data[slug] %>
+        <% article.formatted_date = parseDate(article.date) %>
+        <% if(article.published !== false || environment=='development') { %>
+          <% var classes = article.published == false ? 'unpublished' : '' %>
+          <a href="/writing/<%- slug %>" class="article <%- classes %>">
+            <h2 class="article-title"><%- article.title %></h2>
+            <h3 class="article-date"><%- article.date %></h3>
+            <%- article.formatted_date.day %>
+            <%- article.formatted_date.month %>
+            <%- article.formatted_date.year %>
+            <%- article.title %>
+          </a>
+        <% } %>
+      <% } %>
     <% } %>
   </div>
 </div>

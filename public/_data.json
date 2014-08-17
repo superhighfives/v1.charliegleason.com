@@ -1,14 +1,14 @@
 {
   "index": {
-    "page": "Home"
+    "title": "Home"
   },
   "about": {
-    "page": "About"
+    "title": "About"
   },
   "writing": {
-    "page": "Writing"
+    "title": "Writing"
   },
   "404": {
-    "page": "Oh no!"
+    "title": "Oh no!"
   }
 }

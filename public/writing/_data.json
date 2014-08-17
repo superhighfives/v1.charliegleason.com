@@ -1,8 +1,13 @@
 {
   "index": {
-    "page": "Writing"
+    "title": "Writing"
   },
-
-  "posts": {
+  "on-running" : {
+    "title": "On Running",
+    "date": "2013-06-02"
+  },
+  "2013-in-retrospect" : {
+    "title": "2013 In Retrospect",
+    "date": "2013-12-31"
   }
 }

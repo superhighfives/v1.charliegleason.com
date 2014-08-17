@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><%- page %> / <%- title %></title>
+  <title><%- title %> / <%- site %></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/main.css">
@@ -20,7 +20,7 @@
         <div class="row">
           
           <div class="col-md-2">
-            <h1 class="header-logo"><a href="/"><%- title %></a></h1>
+            <h1 class="header-logo"><a href="/"><%- site %></a></h1>
           </div>
 
           <div class="col-md-8">
@@ -39,7 +39,12 @@
       <div class="container">
         <div class="row">
           <% if(current.published !== false || environment=='development') { %>
-            <%- yield %>
+            <% var post_view = (current.path[0] == "projects" || current.path[0] == "writing") && current.path[1] != "index" %>
+            <% if(post_view) { %>
+              <%- partial("_partials/_content") %>
+            <% } else { %>
+              <%- yield %>
+            <% } %>
           <% } else { %>
             <%- partial("404") %>
           <% } %>
