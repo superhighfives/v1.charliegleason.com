@@ -21,7 +21,7 @@ gulp.task('serve', function () {
       }
     });
     /**
-     * Watch for scss changes, tell BrowserSync to refresh main.css
+     * Watch for sass changes, tell BrowserSync to refresh main.css
      */
     gulp.watch("public/**/*.sass", function () {
       reload("main.css", {stream: true});
@@ -29,7 +29,7 @@ gulp.task('serve', function () {
     /**
      * Watch for all other changes, reload the whole page
      */
-    gulp.watch(["public/**/*.ejs", "public/**/*.json"], function () {
+    gulp.watch(["public/**/*.ejs", "public/**/*.json", "public/**/*.md"], function () {
       reload();
     });
   })
@@ -43,12 +43,6 @@ gulp.task('build', function (done) {
     .on('close', done)
 });
 
-gulp.task('browser-reload', function() {
-  // harp.process();
-  // reload({stream: true});
-  reload();
-});
-
 /**
  * Push build to gh-pages
  */
@@ -58,7 +52,7 @@ gulp.task('deploy', ['build'], function () {
 });
 
 /**
- * Default task, running just `gulp` will compile the sass,
- * compile the harp site, launch BrowserSync & watch files.
+ * Default task, running `gulp` will fire up the Harp site,
+ * launch BrowserSync & watch files.
  */
 gulp.task('default', ['serve']);

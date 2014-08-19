@@ -3,11 +3,20 @@
     "title": "Writing"
   },
   "on-running" : {
-    "title": "On Running",
-    "date": "2013-06-02"
+    "title": "On The Fallacy Of Running Alone",
+    "tagline": "Or how exhaustion makes me sentimental",
+    "date": "2013-06-02",
+    "published": false
   },
   "2013-in-retrospect" : {
     "title": "2013 In Retrospect",
-    "date": "2013-12-31"
+    "date": "2013-12-31",
+    "published": false
+  },
+  "harp-gulp-and-browsersync" : {
+    "title": "Harp, Gulp And BrowserSync",
+    "tagline": "Or how I have a weird enthusiasm for static site generators",
+    "hero": true,
+    "date": "2014-08-18"
   }
 }

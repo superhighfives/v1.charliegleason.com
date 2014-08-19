@@ -1,6 +1,6 @@
 ---
-title: On The Fallacy Of Running Alone
-teaser: (Or how exhaustion makes me sentimental)
+title: 
+teaser: 
 layout: "/_layouts/post.haml"
 ---
 

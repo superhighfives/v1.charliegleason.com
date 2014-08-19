@@ -1,6 +1,27 @@
-<div class="col-md-push-2 col-md-8 col-md-pull-2">
-  <h1><%- title %></h1>
-  <h2><%- date %></h2>
+<% if(typeof hero != "undefined" && hero) { %>
+  <div class="col-md-12">
+    <img class="banner" src="/images/writing/<%- current.source %>/hero.jpg" title="<%- title %>" />
+  </div>
+<% } %>
+
+<div class="col-md-offset-2 col-md-10">
+  <div class="heading">
+    <ul class="list-unstyled meta">
+      <li><h1 class="meta-title"><%- title %></h1><li>
+      <% if(typeof tagline != "undefined") { %>
+        <li class="meta-tagline"><%- tagline %></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+  
+<div class="col-md-2">
+  <div class="sidebar">
+    <p><%- partial("../_shared/_tagline") %></p>
+  </div>
+</div>
+
+<div class="col-md-8">
   <div class="content">
     <%- yield %>
   </div>
