@@ -14,6 +14,8 @@ So I dug in.
 
 So, we'll need [Gulp](gulp), [Harp](harp) and [BrowserSync](browsersync).
 
+---
+
 ### Getting started with Gulp
 
 The first thing I noticed, when checking out Gulp, was the simplicity. After wrestling with Grunt for so long, I was chuffed to see a single named function was all that's needed to get started.
@@ -42,6 +44,8 @@ As it's the default task, just run ```gulp```.
 gulp
 ```
 
+---
+
 ### Getting started with Harp
 
 Similarly, Harp is super straightforward.
@@ -57,6 +61,8 @@ harp init myproject
 ```
 
 That will give you the barest of projects, using [Less](less) for styles and [Jade](jade) for HTML. Personally, I prefer [Sass](sass) and [EJS](ejs), but it's not hard to change things over. Harp tends towards convention over configuration, so all you really need is a single .ejs or .jade page and you're good to go.
+
+---
 
 ### Getting started with BrowserSync
 
@@ -96,7 +102,7 @@ Maybe make another tea? You may be sick of tea by now. I'm not confident in how 
 
 Finally, run ```gulp```.
 
-Here's what is happening. Gulp fires up Harp on port 9000 (you can change that in the ```gulpfile.js```), and BrowserSync proxies it, usually on 3000. So just hit up <http://localhost:3000> and you're ready to party. It's worth checking the output in your console though, as it will give you the definitive address.
+Here's what is happening. Gulp fires up Harp on port 9000 (you can change that in the ```gulpfile.js```), and BrowserSync proxies it, usually on 3000. So just hit up ```localhost:3000``` and you're ready to party. It's worth checking the output in your console though, as it will give you the definitive address.
 
 ---
 

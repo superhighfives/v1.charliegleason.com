@@ -1,0 +1,22 @@
+.article-link
+  display: block
+  margin-bottom: 96px
+  border-bottom: 2px solid $color-off-white
+
+  &:hover
+    .article-link-title
+      color: $color-red
+  .article-link-title
+    transition: color 0.3s
+    color: $color-body-grey
+    +type(36)
+
+  .article-link-tagline,
+  .article-link-date
+    color: $color-light-grey
+    +type(18)
+
+  .article-link-date
+    +type(14)
+    text-transform: uppercase
+    padding-top: 4px

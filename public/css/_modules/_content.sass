@@ -1,11 +1,22 @@
-.meta
+.meta-header
   border-bottom: 2px solid $color-off-white
   padding-bottom: 24px
   .meta-title
     margin-bottom: 12px
-  .meta-tagline
-    color: $color-light-grey
+  .meta-tagline,
     +type(18)
+    color: $color-light-grey
+
+.meta-footer
+  border-top: 2px solid $color-off-white
+  display: inline-block
+  border-bottom: none
+  margin-top: 96px
+  padding-top: 24px
+  color: $color-light-grey
+  +type(14)
+  dt, dd
+    +line-height(30)
 
 .content
   .hero-strapline
@@ -38,6 +49,8 @@
   p
     +type(18)
     +line-height(30)
+    img
+      @extend .img-responsive
   a
     border-bottom: solid 2px transparent
     transition: color 0.3s, background-color 0.3s

@@ -1,12 +1,3 @@
-<% function parseDate(string) {
-  var date = new Date(Date.parse(article.date));
-  return {
-    "year": date.getFullYear(),
-    "month": date.getMonth(),
-    "day": date.getDay()
-  }
-} %>
-
 <div class="col-md-2">
   <div class="sidebar">
     <p><%- partial("../_shared/_tagline") %></p>
@@ -17,12 +8,19 @@
     <% for(slug in public.writing._data) { %>
       <% if(slug != "index") { %>
         <% var article = public.writing._data[slug] %>
-        <% article.formatted_date = parseDate(article.date) %>
         <% if(article.published !== false || environment=='development') { %>
           <% var classes = article.published == false ? 'unpublished' : '' %>
-          <a href="/writing/<%- slug %>" class="article <%- classes %>">
-            <h2 class="article-title"><%- article.title %></h2>
-            <h3 class="article-date"><%- article.date %></h3>
+          <a href="/writing/<%- slug %>" class="article-link <%- classes %>">
+            <% if(typeof article.hero != "undefined" && article.hero) { %>
+              <img class="banner" src="/images/writing/<%- slug %>/hero.jpg" title="<%- title %>" />
+            <% } %>
+            <ul class="list-unstyled">
+              <li class="article-link-title"><%- article.title %></li>
+              <% if(typeof article.tagline != "undefined") { %>
+                <li class="article-link-tagline"><%- article.tagline %></li>
+              <% } %>
+              <li class="article-link-date"><%- article.date %></li>
+            </ul>
           </a>
         <% } %>
       <% } %>

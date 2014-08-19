@@ -6,7 +6,7 @@
 
 <div class="col-md-offset-2 col-md-10">
   <div class="heading">
-    <ul class="list-unstyled meta">
+    <ul class="list-unstyled meta-header">
       <li><h1 class="meta-title"><%- title %></h1><li>
       <% if(typeof tagline != "undefined") { %>
         <li class="meta-tagline"><%- tagline %></li>
@@ -25,4 +25,22 @@
   <div class="content">
     <%- yield %>
   </div>
+
+  <% if(typeof date != "undefined" || typeof acknowledgements != "undefined") { %>
+    <dl class="dl-horizontal meta-footer">
+      <% if(typeof date != "undefined") { %>
+        <dt>Posted</dt>
+        <dd><%- date %></dd>
+      <% } %>
+      <% if(typeof acknowledgements != "undefined") { %>
+        <dt>Acknowledgements</dt>
+        <% for(slug in acknowledgements) { %>
+        <% var person = acknowledgements[slug] %>
+        <dd>
+          <a href="http://twitter.com/<%- slug %>" title="@<%- slug %> on Twitter"><%- person.name %></a> <%- person.role %>
+        </dd>
+        <% } %>
+      <% } %>
+    </dl>
+  <% } %>
 </div>
