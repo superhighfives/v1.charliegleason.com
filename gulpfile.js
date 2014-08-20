@@ -3,7 +3,6 @@ var harp        = require('harp')
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 var deploy      = require('gulp-gh-pages');
-var clean       = require('gulp-clean');
 var cp          = require('child_process');
 
 /**
@@ -50,8 +49,7 @@ gulp.task('build', function (done) {
 gulp.task('deploy', ['build'], function () {
   gulp.src("./dist/**/*")
     .pipe(deploy())
-    .pipe(gulp.dest('.tmp'))
-    .pipe(clean());
+    .pipe(gulp.dest('./dist'))
 });
 
 /**
