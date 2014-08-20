@@ -1,1 +1,0 @@
-The new mobile-friendly responsive Brightly website continues to pull content from third party services, this time using the [Angular.js](http://angularjs.org/) library and [Bootstrap](http://getbootstrap.com/).
