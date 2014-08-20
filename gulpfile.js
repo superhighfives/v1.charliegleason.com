@@ -36,6 +36,15 @@ gulp.task('serve', function () {
 });
 
 /**
+ * Serve the site in production
+ */
+
+gulp.task('production', function (done) {
+  cp.exec('NODE_ENV=production sudo harp server --port 80', {stdio: 'inherit'})
+    .on('close', done)
+});
+
+/**
  * Build the Harp Site
  */
 gulp.task('build', function (done) {
