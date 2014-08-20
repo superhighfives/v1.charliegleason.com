@@ -1,16 +1,12 @@
-Gosh, 2013 was pretty great. From continuing to build up [Goodfilms](http://goodfil.ms), the social film site I co-founded, to branching out on a range of projects with our digital agency [Codename](http://codename.io), I worked on a massive amount of stuff that I'm incredibly proud of.
+Gosh, 2013 was pretty great.
 
-:imageWithAside
-  <img src="/assets/images/blog/131231-iceland.jpg" alt="Iceland!">
-  Iceland is as cold as it is awesome.
+From continuing to build up [Goodfilms](http://goodfil.ms), the social film site I co-founded, to branching out on a range of projects with our digital agency [Codename](http://codename.io), I worked on a massive amount of stuff that I'm incredibly proud of.
 
 I went to [Turkey](http://www.flickr.com/photos/superhighfives/sets/72157635231348802/), and [Paris](http://www.flickr.com/photos/superhighfives/sets/72157635369438470/), and [Iceland](http://www.flickr.com/photos/superhighfives/sets/72157637091939475/), and drove [all over England](http://www.flickr.com/photos/superhighfives/sets/72157635231336084/) on a ridiculous road trip. [I got engaged](http://www.flickr.com/photos/superhighfives/10657449694/). I started working with [Unbound](http://unbound.co.uk/), I lost 24kg, and I fell off my bike.
 
 Actually, falling off my bike wasn't a highlight.
 
-:imageWithAside
-  <img src="/assets/images/blog/131231-ow.jpg" alt="Ow ow ow.">
-  Do not fall off your bike. Good life advice.
+![Do not fall off your bike. Good life advice.](/images/writing/2013-in-retrospect/image-ow.jpg)
 
 Oh, and [I moved to London](http://www.flickr.com/photos/superhighfives/9590952555/).
 

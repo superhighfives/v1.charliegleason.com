@@ -2,7 +2,7 @@
   <div class="sidebar">
     <p><%- partial("../_shared/_tagline") %></p>
   </div>
-</div>
+  </div>
 <div class="col-md-8">
   <div class="posts">
     <% for(slug in public.writing._data) { %>
@@ -12,9 +12,9 @@
           <% var classes = article.published == false ? 'unpublished' : '' %>
           <a href="/writing/<%- slug %>" class="article-link <%- classes %>">
             <% if(typeof article.hero != "undefined" && article.hero) { %>
-              <img class="banner" src="/images/writing/<%- slug %>/hero.jpg" title="<%- title %>" />
+              <img class="banner" src="/images/writing/<%- slug %>/hero.jpg" title="<%- article.title %>" />
             <% } %>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled article-link-details">
               <li class="article-link-title"><%- article.title %></li>
               <% if(typeof article.tagline != "undefined") { %>
                 <li class="article-link-tagline"><%- article.tagline %></li>

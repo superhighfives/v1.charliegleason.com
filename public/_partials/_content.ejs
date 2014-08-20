@@ -21,26 +21,28 @@
   </div>
 </div>
 
-<div class="col-md-8">
-  <div class="content">
-    <%- yield %>
+<% if(current.path[0] == "projects") { %>
+
+  <div class="col-md-6">
+    <img class="img-responsive project-hero" src="/images/projects/<%- current.source %>/hero.jpg" />
+  </div>
+  <div class="col-md-4">
+    <div class="content">
+      <%- yield %>
+      <% if(typeof link != "undefined") { %>
+        <a class="project-link" href="<%- link %>"><span class="icon">link</span> View the project</a> 
+      <% } %>
+    </div>
+    <%- partial("_meta_footer") %>
   </div>
 
-  <% if(typeof date != "undefined" || typeof acknowledgements != "undefined") { %>
-    <dl class="dl-horizontal meta-footer">
-      <% if(typeof date != "undefined") { %>
-        <dt>Posted</dt>
-        <dd><%- date %></dd>
-      <% } %>
-      <% if(typeof acknowledgements != "undefined") { %>
-        <dt>Acknowledgements</dt>
-        <% for(slug in acknowledgements) { %>
-        <% var person = acknowledgements[slug] %>
-        <dd>
-          <a href="http://twitter.com/<%- slug %>" title="@<%- slug %> on Twitter"><%- person.name %></a> <%- person.role %>
-        </dd>
-        <% } %>
-      <% } %>
-    </dl>
-  <% } %>
-</div>
+<% } else { %>
+
+  <div class="col-md-8">
+    <div class="content">
+      <%- yield %>
+    </div>
+    <%- partial("_meta_footer") %>
+  </div>
+
+<% } %>

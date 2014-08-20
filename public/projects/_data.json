@@ -5,104 +5,104 @@
 
   "beginnings-and-endings": {
     "title": "Beginnings & Endings",
-    "teaser": "A social world map to share and track a song.",
+    "tagline": "A social world map to share and track a song.",
     "link": "http://beginnings.wearebrightly.com",
     "date": "Early 2013",
     "published": false
   },
   "brightly": {
     "title": "Brightly",
-    "teaser": "A website for my music project, Brightly",
+    "tagline": "A website for my music project, Brightly",
     "date": "Late 2011",
     "published": false
   },
   "brightly-deux": {
     "title": "Brightly 2.0",
-    "teaser": "A new website for my music project, Brightly.",
+    "tagline": "A new website for my music project, Brightly.",
     "link": "http://wearebrightly.com",
     "date": "Early 2014",
     "published": false
   },
   "cats-of-istanbul": {
     "title": "Cats Of Istanbul",
-    "teaser": "While in Istanbul I took a photo of every cat I saw.",
+    "tagline": "While in Istanbul I took a photo of every cat I saw.",
     "link": "http://catsofistanbul.charliegleason.com",
     "date": "Mid 2013",
     "published": false
   },
   "codename": {
     "title": "Codename",
-    "teaser": "The central hub for our agency collective.",
+    "tagline": "The central hub for our agency collective.",
     "link": "http://codename.io",
     "date": "Mid 2013",
     "published": false
   },
   "goodfilms": {
     "title": "Goodfilms",
-    "teaser": "A social film site for finding and sharing movies.",
+    "tagline": "A social film site for finding and sharing movies.",
     "link": "http://goodfil.ms",
     "date": "Early 2011",
     "published": false
   },
   "moran-and-cato": {
     "title": "Moran & Cato",
-    "teaser": "A collective live music project.",
+    "tagline": "A collective live music project.",
     "link": "http://moranandcato.com",
     "date": "Late 2012",
     "published": false
   },
   "nononono": {
     "title": "Nononono",
-    "teaser": "Share your opinion with all of the conviction.",
+    "tagline": "Share your opinion with all of the conviction.",
     "link": "http://nononono.co",
     "date": "Early 2013",
     "published": false
   },
   "the-98-against": {
     "title": "The 98 Against",
-    "teaser": "Equality, accountability and screen scraping.",
+    "tagline": "Equality, accountability and screen scraping.",
     "link": "http://the98against.com",
     "date": "Late 2012",
     "published": false
   },
   "this-kind-of-agility": {
     "title": "This Kind Of Agility",
-    "teaser": "A random Arrested Development episode selector.",
+    "tagline": "A random Arrested Development episode selector.",
     "link": "http://thiskindofagility.com",
     "date": "Mid 2013",
     "published": false
   },
   "trova": {
     "title": "Trova",
-    "teaser": "An Australian based shopping style discovery engine.",
+    "tagline": "An Australian based shopping style discovery engine.",
     "link": "http://trova.com.au",
     "date": "Mid 2013",
     "published": false
   },
   "tweetflight": {
     "title": "Tweetflight",
-    "teaser": "An interactive tweet-powered music video.",
+    "tagline": "An interactive tweet-powered music video.",
     "link": "http://tweetflight.wearebrightly.com",
     "date": "Early 2013",
     "published": false
   },
   "unbound": {
     "title": "Unbound",
-    "teaser": "A redesign for the crowdfunding book publisher, Unbound.",
+    "tagline": "A redesign for the crowdfunding book publisher, Unbound.",
     "link": "http://unbound.co.uk",
     "date": "Late 2013",
     "published": false
   },
   "you-are-a-developer": {
     "title": "You Are A Developer",
-    "teaser": "The companion site to my 2012 Web Directions talk.",
+    "tagline": "The companion site to my 2012 Web Directions talk.",
     "link": "http://wds12.charliegleason.com",
     "date": "Late 2012",
     "published": false
   },
   "wds13": {
     "title": "Web Directions South 2013",
-    "teaser": "The conference site for the 2013 Web Directions South.",
+    "tagline": "The conference site for the 2013 Web Directions South.",
     "link": "http://webdirections.org/wds13",
     "date": "Mid 2013",
     "published": false

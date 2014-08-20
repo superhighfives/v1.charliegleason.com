@@ -2,10 +2,22 @@
   display: block
   margin-bottom: 96px
   border-bottom: 2px solid $color-off-white
+  padding: 0
+  
+  .banner
+    margin-bottom: 0
+    transition: opacity 0.3s
 
   &:hover
+    .banner
+      opacity: 0.5
     .article-link-title
       color: $color-red
+
+  .article-link-details
+    padding: 12px 12px 0
+    margin-bottom: 12px
+
   .article-link-title
     transition: color 0.3s
     color: $color-body-grey

@@ -16,8 +16,9 @@
   },
   "2013-in-retrospect" : {
     "title": "2013 In Retrospect",
-    "date": "31st December 2013",
-    "published": false
+    "tagline": "Or how you can get a lot done in 365 days",
+    "hero": true,
+    "date": "31st December 2013"
   },
   "on-running" : {
     "title": "On The Fallacy Of Running Alone",

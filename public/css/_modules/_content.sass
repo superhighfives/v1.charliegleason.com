@@ -8,8 +8,6 @@
     color: $color-light-grey
 
 .meta-footer
-  border-top: 2px solid $color-off-white
-  display: inline-block
   border-bottom: none
   margin-top: 96px
   padding-top: 24px
@@ -17,6 +15,8 @@
   +type(14)
   dt, dd
     +line-height(30)
+  dd
+    border-top: 1px solid $color-off-white
 
 .content
   .hero-strapline
@@ -51,6 +51,8 @@
     +line-height(30)
     img
       @extend .img-responsive
+      @media (min-width: $screen-lg-min)
+        margin-left: -97px
   a
     border-bottom: solid 2px transparent
     transition: color 0.3s, background-color 0.3s

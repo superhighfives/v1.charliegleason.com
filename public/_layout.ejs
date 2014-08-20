@@ -19,15 +19,15 @@
       <div class="container">
         <div class="row">
           
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-3">
             <h1 class="header-logo"><a href="/"><%- site %></a></h1>
           </div>
 
-          <div class="col-md-8">
+          <div class="col-md-8 col-sm-7">
             <%- partial("_shared/_navigation") %>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-2">
             <%- partial("_shared/_social") %>
           </div>
 
@@ -48,6 +48,16 @@
           <% } else { %>
             <%- partial("404") %>
           <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="visible-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <%- partial("_shared/_social") %>
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
 .header
+  @media (max-width: $screen-xs-max)
+    margin-bottom: 24px
   .header-logo,
   .header-navigation,
   .header-social
@@ -6,10 +8,14 @@
     +type(23)
     line-height: $line-height-base
     margin-bottom: 48px
+    @media (max-width: $screen-xs-max)
+      margin-bottom: 12px
   .header-logo
     a
       color: $color-black
   .header-navigation
+    @media (max-width: $screen-xs-max)
+      float: left
     .selected
       border-bottom: 2px solid $color-red
       &:hover
@@ -17,10 +23,16 @@
   .header-social
     max-height: 30px
     margin-bottom: 0
+    @media (max-width: $screen-xs-max)
+      float: right
+    @media (max-width: $screen-xs-min)
+      display: none
   .header-contact
     .header-contact-email
       transition: opacity 0.3s
       opacity: 0
+      @media (max-width: $screen-sm-max)
+        display: none
     &:hover
       .header-contact-email
         opacity: 1

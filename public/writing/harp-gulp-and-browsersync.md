@@ -102,13 +102,17 @@ Maybe make another tea? You may be sick of tea by now. I'm not confident in how 
 
 Finally, run ```gulp```.
 
+![An example of the terminal output you should probably see.](/images/writing/harp-gulp-and-browsersync/image-terminal.png)
+
 Here's what is happening. Gulp fires up Harp on port 9000 (you can change that in the ```gulpfile.js```), and BrowserSync proxies it, usually on 3000. So just hit up ```localhost:3000``` and you're ready to party. It's worth checking the output in your console though, as it will give you the definitive address.
 
 ---
 
 ## Changing things, because you can
 
-Now you can edit main.sass and the updates will happen in real-time. It's the same system that's currently running this blog, and you can see the full range of tasks (including deploying straight to [Github Pages](github-pages)) in the source [over on Github](charlie-source).
+Now you can edit ```main.sass``` and the updates will happen in real-time. It's the same system that's currently running this blog, and you can see the full range of tasks (including deploying straight to [Github Pages](github-pages)) in the source [over on Github](charlie-source).
+
+This is the sound of you succeeding, you beautiful human.
 
   [saints-row-4]: http://www.saintsrow.com/uk
   [pith]: https://github.com/mdub/pith

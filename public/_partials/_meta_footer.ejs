@@ -1,0 +1,17 @@
+<% if(typeof date != "undefined" || typeof acknowledgements != "undefined") { %>
+  <dl class="dl-horizontal meta-footer">
+    <% if(typeof date != "undefined") { %>
+      <dt>From</dt>
+      <dd><%- date %></dd>
+    <% } %>
+    <% if(typeof acknowledgements != "undefined") { %>
+      <dt>Acknowledgements</dt>
+      <% for(slug in acknowledgements) { %>
+      <% var person = acknowledgements[slug] %>
+      <dd>
+        <a href="http://twitter.com/<%- slug %>" title="@<%- slug %> on Twitter"><%- person.name %></a> <%- person.role %>
+      </dd>
+      <% } %>
+    <% } %>
+  </dl>
+<% } %>
