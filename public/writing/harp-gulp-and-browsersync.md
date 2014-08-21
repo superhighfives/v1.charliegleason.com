@@ -68,19 +68,21 @@ That will give you the barest of projects, using [Less][less] for styles and [Ja
 
 Finally, [BrowserSync][browsersync].
 
-Technically you don't need to install this globally, unless you're using it separately from the command line, so you can skip this step.
+Technically you don't need to install this globally, unless you're using it separately from the command line, so you can skip this step and just have it in your npm ```package.json```.
+
+But, if you're keen:
 
 ```console
 npm install -g browser-sync
 ```
 
-We'll run BrowserSync via Gulp, so you don't need to do anything else at this point. You can run from the command line though, using the ```browser-sync``` command.
+For this example we'll run BrowserSync via Gulp, so you don't need to do anything else at this point. You can run from the command line though, using the ```browser-sync``` command.
 
 ---
 
 ## Setting the scene
 
-So, there are some dependencies involved. To make life a little easier, I've pulled together the cleverly titled boilerplate, called ```harp-gulp-browsersync-boilerplate```. You can use it to get the whole thing up and running straight away, and then I'll go through and explain what's happening. Cool? Cool.
+So, there are some dependencies involved. To make life a little easier, I've pulled together the cleverly titled boilerplate, [harp-gulp-browsersync-boilerplate][harp-gulp-browsersync-boilerplate]. You can use it to get the whole thing up and running straight away, and then I'll go through and explain what's happening. Cool? Cool.
 
 Let's take a moment to look at a lolcat.
 
@@ -132,3 +134,4 @@ This is the sound of you succeeding, you beautiful human.
   [ejs]: http://embeddedjs.com/
   [github-pages]: https://pages.github.com/
   [charlie-source]: https://github.com/superhighfives/charliegleason.com
+  [harp-gulp-browsersync-boilerplate]: https://github.com/superhighfives/harp-gulp-browsersync-boilerplate
