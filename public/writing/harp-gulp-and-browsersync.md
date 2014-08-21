@@ -1,10 +1,10 @@
-A couple of weeks ago I decided to rejig my personal site, because I hit a particularly tough patch in [Saints Row 4](saints-row-4) and what else would I spend a Saturday doing? Previously I'd had good experiences with [Pith](pith), which is a really solid Ruby based static site generator, but I'd overcomplicated the whole thing and it felt a bit clunky. Plus I wanted to try some new fanciness.
+A couple of weeks ago I decided to rejig my personal site, because I hit a particularly tough patch in [Saints Row 4][saints-row-4] and what else would I spend a Saturday doing? Previously I'd had good experiences with [Pith][pith], which is a really solid Ruby based static site generator, but I'd overcomplicated the whole thing and it felt a bit clunky. Plus I wanted to try some new fanciness.
 
-After setting up [Jekyll](jekyll), another Ruby based static site generator (we should acronym that, no?), I got a [tweet](tweet) from Glen Maddern, mentioning a deep affection for [Harp.js](harp). It made me realise that though I've admired it from afar, I hadn't really messed much with [Node.js](node), and a personal site is a pretty good place to get your hands dirty.
+After setting up [Jekyll][jekyll], another Ruby based static site generator (we should acronym that, no?), I got a [tweet][tweet] from Glen Maddern, mentioning a deep affection for [Harp.js][harp]. It made me realise that though I've admired it from afar, I hadn't really messed much with [Node.js][node], and a personal site is a pretty good place to get your hands dirty.
 
-At the same time, I was hearing good things about [Gulp.js](gulp), the Node based streaming build system, and I'd always found it's predecessor [Grunt.js](grunt) a little verbose.
+At the same time, I was hearing good things about [Gulp.js][gulp], the Node based streaming build system, and I'd always found it's predecessor [Grunt.js][grunt] a little verbose.
 
-[BrowserSync](browsersync) was the final piece of the puzzle, and I was primarily curious about its much touted ability to inject CSS changes without reloading the page.
+[BrowserSync][browsersync] was the final piece of the puzzle, and I was primarily curious about its much touted ability to inject CSS changes without reloading the page.
 
 So I dug in.
 
@@ -12,7 +12,7 @@ So I dug in.
 
 ## Setting it all up
 
-So, we'll need [Gulp](gulp), [Harp](harp) and [BrowserSync](browsersync).
+So, we'll need [Gulp][gulp], [Harp][harp] and [BrowserSync][browsersync].
 
 ---
 
@@ -22,7 +22,7 @@ The first thing I noticed, when checking out Gulp, was the simplicity. After wre
 
 (To be fair, I've not written anything particularly onerous in Gulp, so that's a bit harsh.)
 
-First, make sure you've got [Gulp installed](gulp-getting-started).
+First, make sure you've got [Gulp installed][gulp-getting-started].
 
 ```console
 npm install --global gulp
@@ -60,13 +60,15 @@ You can then use harp to generate the bones of a project.
 harp init myproject
 ```
 
-That will give you the barest of projects, using [Less](less) for styles and [Jade](jade) for HTML. Personally, I prefer [Sass](sass) and [EJS](ejs), but it's not hard to change things over. Harp tends towards convention over configuration, so all you really need is a single .ejs or .jade page and you're good to go.
+That will give you the barest of projects, using [Less][less] for styles and [Jade][jade] for HTML. Personally, I prefer [Sass][sass] and [EJS][ejs], but it's not hard to change things over. Harp tends towards convention over configuration, so all you really need is a single .ejs or .jade page and you're good to go.
 
 ---
 
 ### Getting started with BrowserSync
 
-Finally, [BrowserSync](browsersync).
+Finally, [BrowserSync][browsersync].
+
+Technically you don't need to install this globally, unless you're using it separately from the command line, so you can skip this step.
 
 ```console
 npm install -g browser-sync
@@ -110,7 +112,7 @@ Here's what is happening. Gulp fires up Harp on port 9000 (you can change that i
 
 ## Changing things, because you can
 
-Now you can edit ```main.sass``` and the updates will happen in real-time. It's the same system that's currently running this blog, and you can see the full range of tasks (including deploying straight to [Github Pages](github-pages)) in the source [over on Github](charlie-source).
+Now you can edit ```main.sass``` and the updates will happen in real-time. It's the same system that's currently running this blog, and you can see the full range of tasks (including deploying straight to [Github Pages][github-pages]) in the source [over on Github][charlie-source].
 
 This is the sound of you succeeding, you beautiful human.
 
@@ -129,4 +131,4 @@ This is the sound of you succeeding, you beautiful human.
   [sass]: http://sass-lang.com/
   [ejs]: http://embeddedjs.com/
   [github-pages]: https://pages.github.com/
-  [charlie-source]: https://github.com/superhighfives/charlie-deux
+  [charlie-source]: https://github.com/superhighfives/charliegleason.com
