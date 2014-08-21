@@ -24,9 +24,13 @@
 <% if(current.path[0] == "projects") { %>
 
   <div class="col-md-6">
-    <a href="<%- link %>">
-    <img class="img-responsive project-hero" src="/images/projects/<%- current.source %>/hero.jpg" />
-    </a>
+    <% if(typeof link != "undefined") { %>
+      <a href="<%- link %>">
+    <% } %>
+      <img class="img-responsive project-hero" src="/images/projects/<%- current.source %>/hero.jpg" />
+    <% if(typeof link != "undefined") { %>
+      </a>
+    <% } %>
   </div>
   <div class="col-md-4">
     <div class="content">
