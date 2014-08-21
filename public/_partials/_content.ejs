@@ -1,6 +1,6 @@
 <% if(typeof hero != "undefined" && hero) { %>
   <div class="col-md-12">
-    <img class="banner" src="/images/writing/<%- current.source %>/hero.jpg" title="<%- title %>" />
+    <img class="banner" src="/images/articles/<%- current.source %>/hero.jpg" title="<%- title %>" />
   </div>
 <% } %>
 
@@ -24,7 +24,9 @@
 <% if(current.path[0] == "projects") { %>
 
   <div class="col-md-6">
+    <a href="<%- link %>">
     <img class="img-responsive project-hero" src="/images/projects/<%- current.source %>/hero.jpg" />
+    </a>
   </div>
   <div class="col-md-4">
     <div class="content">

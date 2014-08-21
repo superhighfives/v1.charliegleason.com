@@ -5,14 +5,14 @@
   </div>
 <div class="col-md-8">
   <div class="posts">
-    <% for(slug in public.writing._data) { %>
+    <% for(slug in public.articles._data) { %>
       <% if(slug != "index") { %>
-        <% var article = public.writing._data[slug] %>
+        <% var article = public.articles._data[slug] %>
         <% if(article.published !== false || environment=='development') { %>
           <% var classes = article.published == false ? 'unpublished' : '' %>
-          <a href="/writing/<%- slug %>" class="article-link <%- classes %>">
+          <a href="/articles/<%- slug %>" class="article-link <%- classes %>">
             <% if(typeof article.hero != "undefined" && article.hero) { %>
-              <img class="banner" src="/images/writing/<%- slug %>/hero.jpg" title="<%- article.title %>" />
+              <img class="banner" src="/images/articles/<%- slug %>/hero.jpg" title="<%- article.title %>" />
             <% } %>
             <ul class="list-unstyled article-link-details">
               <li class="article-link-title"><%- article.title %></li>

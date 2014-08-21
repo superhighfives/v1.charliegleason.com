@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="//cloud.typography.com/7039052/624944/css/fonts.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css">
 
   <meta property="og:title" content="<%- title %> / <%- site %>" />
   <meta property="og:description" content="<%- description %>" />
@@ -46,7 +47,7 @@
       <div class="container">
         <div class="row">
           <% if(current.published !== false || environment=='development') { %>
-            <% var post_view = (current.path[0] == "projects" || current.path[0] == "writing") && current.path[1] != "index" %>
+            <% var post_view = (current.path[0] == "projects" || current.path[0] == "articles") && current.path[1] != "index" %>
             <% if(post_view) { %>
               <%- partial("_partials/_content") %>
             <% } else { %>
@@ -79,6 +80,9 @@
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-21848111-1');ga('send','pageview');
   </script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>

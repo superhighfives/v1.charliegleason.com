@@ -8,9 +8,14 @@
     +type(23)
     line-height: $line-height-base
     margin-bottom: 48px
+    @media (max-width: $screen-md-max)
+      +type(20)
     @media (max-width: $screen-xs-max)
       margin-bottom: 12px
+      +type(18)
   .header-logo
+    @media (max-width: $screen-xs-max)
+      margin-bottom: 6px
     a
       color: $color-black
   .header-navigation

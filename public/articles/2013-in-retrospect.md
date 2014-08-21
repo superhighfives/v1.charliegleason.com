@@ -6,7 +6,7 @@ I went to [Turkey](http://www.flickr.com/photos/superhighfives/sets/721576352313
 
 Actually, falling off my bike wasn't a highlight.
 
-![Do not fall off your bike. Good life advice.](/images/writing/2013-in-retrospect/image-ow.jpg)
+![Do not fall off your bike. Good life advice.](/images/articles/2013-in-retrospect/image-ow.jpg)
 
 Oh, and [I moved to London](http://www.flickr.com/photos/superhighfives/9590952555/).
 
@@ -20,7 +20,7 @@ Here are a couple of the things I'm really proud of, in no particular order.
 - Getting [Tweetflight](http://tweetflight.wearebrightly.com/) on the front page of **The Pirate Bay** for three days.
 - [Codename](http://codename.io/)
 - [Trova](http://trova.com.au/)
-- Finally starting a [music blog](http://letsrunawaytogether.com/), even if I don't write anywhere near enough for it.
+- ~~Finally starting a music blog, even if I don't write anywhere near enough for it.~~ Well, that was short lived.
 - [This Kind of Agility](http://thiskindofagility.com/)
 - [Miss Ladybird Cakes](http://missladybirdcakes.com/)
 - [Cats of Istanbul](http://catsofistanbul.charliegleason.com/)

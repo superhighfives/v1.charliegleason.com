@@ -3,7 +3,11 @@
   .welcome-hero
     +type(58)
     +line-height(18)
+    @media (max-width: $screen-xs-max)
+      +type(30)
   p
     +type(24)
+    @media (max-width: $screen-xs-max)
+      +type(18)
   a
     text-decoration: underline

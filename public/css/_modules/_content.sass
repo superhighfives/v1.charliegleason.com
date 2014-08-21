@@ -14,7 +14,9 @@
   color: $color-light-grey
   +type(14)
   dt, dd
-    +line-height(30)
+    margin-top: 5px
+    padding-top: 5px
+    +line-height(24)
   dd
     border-top: 1px solid $color-off-white
 
@@ -26,6 +28,8 @@
   figure
     @media (min-width: $screen-lg-min)
       margin-left: -195px
+    @media (min-width: $screen-md-min)
+      margin-left: -160px
     figcaption
       *:last-child
         margin-bottom: 0
@@ -48,13 +52,18 @@
       +type(14)
   h1, h2, h3, h4, h5, h6
     margin-top: 96px
-  p
+  p, ul
     +type(18)
     +line-height(30)
+  p
     img
       @extend .img-responsive
-      @media (min-width: $screen-lg-min)
-        margin-left: -97px
+  p img,
+  pre
+    @media (min-width: $screen-lg-min)
+      margin-left: -97px
+    @media (min-width: $screen-md-min)
+      margin-left: -80px
   a
     border-bottom: solid 2px transparent
     transition: color 0.3s, background-color 0.3s

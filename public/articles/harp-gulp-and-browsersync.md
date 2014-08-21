@@ -24,7 +24,7 @@ The first thing I noticed, when checking out Gulp, was the simplicity. After wre
 
 First, make sure you've got [Gulp installed][gulp-getting-started].
 
-```console
+```bash
 npm install --global gulp
 ```
 
@@ -50,13 +50,13 @@ gulp
 
 Similarly, Harp is super straightforward.
 
-```console
+```bash
 sudo npm install -g harp
 ```
 
 You can then use harp to generate the bones of a project.
 
-```console
+```bash
 harp init myproject
 ```
 
@@ -72,7 +72,7 @@ Technically you don't need to install this globally, unless you're using it sepa
 
 But, if you're keen:
 
-```console
+```bash
 npm install -g browser-sync
 ```
 
@@ -86,19 +86,19 @@ So, there are some dependencies involved. To make life a little easier, I've pul
 
 Let's take a moment to look at a lolcat.
 
-![Phew.](/images/writing/harp-gulp-and-browsersync/image-lolcat.jpg)
+![Phew.](/images/articles/harp-gulp-and-browsersync/image-lolcat.jpg)
 
 That was awesome.
 
 So, Harp has a really great feature where you can use any repo as a boilerplate. To use my super-fancy repo, you just need the ```--boilerplate``` (or -b) option.
 
-```console
+```bash
 harp init src --boilerplate superhighfives/harp-gulp-browsersync-boilerplate
 ```
 
 Then, once it's downloaded (maybe make a tea or something?) you can jump into src and grab the dependencies.
 
-```console
+```bash
 npm install
 ```
 
@@ -106,9 +106,9 @@ Maybe make another tea? You may be sick of tea by now. I'm not confident in how 
 
 Finally, run ```gulp```.
 
-![An example of the terminal output you should probably see.](/images/writing/harp-gulp-and-browsersync/image-terminal.png)
+![An example of the terminal output you should probably see.](/images/articles/harp-gulp-and-browsersync/image-terminal.png)
 
-Here's what is happening. Gulp fires up Harp on port 9000 (you can change that in the ```gulpfile.js```), and BrowserSync proxies it, usually on 3000. So just hit up ```localhost:3000``` and you're ready to party. It's worth checking the output in your console though, as it will give you the definitive address.
+Here's what is happening. Gulp fires up Harp on port 9000 (you can change that in the ```gulpfile.js```), and BrowserSync proxies it, usually on 3000. So just hit up ```localhost:3000``` and you're ready to party. It's worth checking the output in your terminal though, as it will give you the definitive address.
 
 ---
 
