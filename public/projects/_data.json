@@ -79,6 +79,13 @@
     "date": "Mid 2013",
     "published": true
   },
+  "true": {
+    "title": "True",
+    "tagline": "An animated music video, powered by the Web Audio API.",
+    "link": "http://true.wearebrightly.com",
+    "date": "Late 2014",
+    "published": true
+  },
   "tweetflight": {
     "title": "Tweetflight",
     "tagline": "An interactive tweet-powered music video.",
