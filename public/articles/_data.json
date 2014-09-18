@@ -2,6 +2,12 @@
   "index": {
     "title": "Articles"
   },
+  "deploying-to-github-pages-with-gulp" : {
+    "title": "Deploying To Github Pages With Gulp",
+    "hero": true,
+    "date": "24th August 2014",
+    "published": false
+  },
   "harp-gulp-and-browsersync" : {
     "title": "Harp, Gulp And BrowserSync",
     "tagline": "Or how I have a weird enthusiasm for static site generators",

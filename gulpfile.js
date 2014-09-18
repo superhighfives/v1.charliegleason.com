@@ -56,9 +56,8 @@ gulp.task('build', function (done) {
  * Push build to gh-pages
  */
 gulp.task('deploy', ['build'], function () {
-  gulp.src("./dist/**/*")
+  return gulp.src("./dist/**/*")
     .pipe(deploy())
-    .pipe(gulp.dest('./dist'))
 });
 
 /**
