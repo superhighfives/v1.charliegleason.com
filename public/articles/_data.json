@@ -5,8 +5,7 @@
   "deploying-to-github-pages-with-gulp" : {
     "title": "Deploying To Github Pages With Gulp",
     "hero": true,
-    "date": "24th August 2014",
-    "published": false
+    "date": "19th September 2014"
   },
   "harp-gulp-and-browsersync" : {
     "title": "Harp, Gulp And BrowserSync",
