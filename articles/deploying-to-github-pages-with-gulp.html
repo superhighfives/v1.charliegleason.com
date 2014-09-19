@@ -84,19 +84,91 @@
 
   <div class="col-md-8">
     <div class="content">
-      <p>The older I get the more I realise I am an inherently lazy person. When I first starting doing the Internets, I would spend a massive amount of cognitive energy dragging files to <a href="transmit">Transmit</a>, hoping I hadn&#39;t inadvertently overwritten something super important. It was dark, people. It was a dark time.</p>
+      <p>The older I get, the more I realise that I do not like <a href="http://en.wikipedia.org/wiki/Don&#39;t_repeat_yourself">doing things more than once</a>.</p>
+<p>When I first starting making the Internets, I would spend a massive amount of cognitive energy transferring things via FTP; dragging files to <a href="transmit">Transmit</a>, hoping I hadn&#39;t inadvertently overwritten something super important. It was dark, people. It was a dark time.</p>
 <p><img src="/images/articles/deploying-to-github-pages-with-gulp/image-no.jpg" alt="No, FTP. No."></p>
-<p>Fortunately, this is no longer the case.</p>
-<p>I&#39;ve been using <a href="http://pages.github.com/">Github Pages</a> to deploy static sites for a while now. It&#39;s quick, easy, and pretty painless. You can easily get a site set up and hosted in no time, and it&#39;s free. Win win!</p>
-<p>If you&#39;ve run through my [Harp, Gulp and Browsersync]</p>
-<p>and <a href="https://github.com/rowoot/gulp-gh-pages">gulp-gh-pages</a> is a <a href="http://gulpjs.com/">Gulp.js</a> plugin to d</p>
+<p>Fortunately, this is no longer the case. You don&#39;t have to live like this. <strong>We</strong> don&#39;t have to live like this.</p>
+<p>I&#39;ve been using <a href="http://pages.github.com/">Github Pages</a> to deploy static sites for a while now. It&#39;s quick, easy, and pretty painless. You can easily get a static site set up and hosted in no time, and it&#39;s free. Win win! I actually used it for the client side of <a href="http://tweetflight.wearebrightly.com">Tweetflight</a>.</p>
+<p>If you&#39;ve run through my <a href="http://charliegleason.com/articles/harp-gulp-and-browsersync">Harp, Gulp and Browsersync</a> tutorial, you can use that as the basis for deployment. If you haven&#39;t, all you need is a <a href="https://github.com/repositories/new">repo</a> and a directory to deploy. Easy as.</p>
+<p>First up, you&#39;ll want to install <a href="http://gulpjs.com/">gulp</a> and <a href="https://github.com/rowoot/gulp-gh-pages">gulp-gh-pages</a>, which will handle the deployment.</p>
+<hr>
+<h2>Getting started</h2>
+<p>So, you&#39;ll need a <code>package.json</code> file, to use manage the required Node packages.</p>
+<pre><code class="language-bash">npm init</code></pre>
+<p>If you don&#39;t have <a href="http://nodejs.org/">Node.js</a>, you can install it <a href="http://nodejs.org/">here</a>.</p>
+<p>It will ask you some questions about your project, and it&#39;s pretty friendly. Good for you, NPM. Good. For. You.</p>
+<p>Right. To celebrate, let&#39;s enjoy a photo of a cat in the snow.</p>
+<p><img src="/images/articles/deploying-to-github-pages-with-gulp/image-snowcat.jpg" alt="Yes. You are the best cat."></p>
+<p>So good.</p>
+<p>Add <a href="http://gulpjs.com/">Gulp</a>, which powers this glorious, gorgeous beast.</p>
+<pre><code class="language-bash">npm install gulp --save-dev</code></pre>
+<p>Then you&#39;ll need to add <a href="https://github.com/rowoot/gulp-gh-pages">gulp-gh-pages</a>.</p>
+<pre><code class="language-bash">npm install gulp-gh-pages --save-dev</code></pre>
+<p>Now, in your <code>gulpfile.js</code>, add the following:</p>
+<pre><code class="language-js">var gulp        = require(&#39;gulp&#39;);
+var deploy      = require(&#39;gulp-gh-pages&#39;);
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task(&#39;deploy&#39;, function () {
+  return gulp.src(&quot;./dist/**/*&quot;)
+    .pipe(deploy())
+});</code></pre>
+<h2>So what&#39;s going on here?</h2>
+<p>We&#39;re defining a <strong>task</strong>, called <code>deploy</code>. You could get gulp to run a build task here, if you needed to, prior to deploying it. To do so, just update <code>&#39;deploy&#39;, function() {</code> to <code>&#39;deploy, [&#39;build&#39;], function () {</code> (or whatever the name of you gulp build task is) and gulp will take care of it. It&#39;s one of the many reasons gulp is wild.</p>
+<p>I used gulp four times in that paragraph. Calm down, Charlie.</p>
+<p><code>/dist</code> is the directory we&#39;re deploying, and <code>/**/*</code> means it will deploy recursively. All files and directories inside of <code>/dist</code> will be included.</p>
+<hr>
+<h2>Github-ing</h2>
+<p>So, given that you&#39;re deploying to Github, you&#39;re going to need to have your site in a repository. You can see an example I set up at <a href="https://github.com/superhighfives/testing-gulp-gh-pages">testing-gulp-gh-pages</a>. If you don&#39;t already have your site on <a href="http://github.com/">Github</a>, you should anyway. It&#39;s awesome, and means you&#39;ll be using proper version control for your site. Which is a huge piece of mind. Which you obviously deserve.</p>
+<p>You&#39;ll want to avoid pushing your whole <code>/node_modules</code> directory on Github, as it&#39;s being managed by your <code>package.json</code> file. To stop this happening, make a file called <code>.gitignore</code>. That&#39;s essentially a space where you can <a href="https://help.github.com/articles/ignoring-files">list files you don&#39;t want to end up in source control</a>, each on a new line.</p>
+<p>Just make sure node_modules is listed:</p>
+<pre><code>node_modules</code></pre>
+<p>That way, when you push to Github, you won&#39;t accidentally push all of your sites Node depedencies.</p>
+<p>If you don&#39;t want to commit your <code>/dist</code>, or the folder that is holding your built site, you can add that too:</p>
+<pre><code>node_modules
+dist</code></pre>
+<p>It really depends on how you&#39;re managing your folder structure. There&#39;s no wrong way, but it&#39;s worth noting that if your repo is public you should avoid putting any fancy paid fonts or similar in there.</p>
+<p>In that case you&#39;re likely better hosting them remotely with <a href="http://aws.amazon.com/s3/">S3</a> or <a href="http://www.rackspace.co.uk/cloud/files">Rackspace</a>. I use Rackspace, personally.</p>
+<hr>
+<h2>Custom domains</h2>
+<p>If you want to use a <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages">custom domain</a> for your Github hosted site, you&#39;ll need to do two things first.</p>
+<ol>
+<li><p>Make a text-based <code>CNAME</code> file that will end up in the root of the directory you&#39;re deploying. For example, <code>/dist/CNAME</code>. All it needs inside is the url you want to point to your new site. For me, it&#39;s <code>charliegleason.com</code>.</p>
+</li>
+<li><p>Update your DNS records. Github has a <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages">pretty good walkthrough of how to do this</a>.</p>
+</li>
+</ol>
+<p>When you&#39;re ready to deploy, the folder you&#39;re pushing to Github should have CNAME in the root. As long as that&#39;s in there, you&#39;re golden.</p>
+<p>And then you&#39;re all set.</p>
+<hr>
+<h2>Fire away!</h2>
+<p>When you&#39;re ready to deploy, push the latest changes to your repo to Github.</p>
+<pre><code class="language-bash">git add . # Add any untracked files
+git commit -va # Commit the changes
+git push # Push it to Github</code></pre>
+<p>You&#39;ll also need to make sure you have a <code>gh-pages</code> branch, if you don&#39;t already.</p>
+<pre><code class="language-bash">git checkout --orphan gh-pages
+git rm -rf .
+touch README.md
+git add README.md
+git commit -m &quot;Init gh-pages&quot;
+git push --set-upstream origin gh-pages
+git checkout master</code></pre>
+<p>So, now you just need to run your deploy task.</p>
+<pre><code class="language-bash">gulp deploy</code></pre>
+<p>And voila. You can visit your fancy new site at <code>your-username.github.io/your-reponame</code>, or (if the DNS has propogated) at the custom domain you set up.</p>
+<p>You can see <a href="http://superhighfives.github.io/testing-gulp-gh-pages/">one I prepared earlier</a>, which is using the testing-gulp-gh-pages <a href="https://github.com/superhighfives/testing-gulp-gh-pages">repo</a>.</p>
+<p><img src="/images/articles/deploying-to-github-pages-with-gulp/image-yes.jpg" alt="Yes, Github Pages. Yes."></p>
+<p>You&#39;re great. Good for you. If you have any problems, I can probably help. Just <a href="mailto:hi@charliegleason.com">email me</a>.</p>
 
     </div>
     
   <dl class="dl-horizontal meta-footer">
     
       <dt>From</dt>
-      <dd>24th August 2014</dd>
+      <dd>19th September 2014</dd>
     
     
   </dl>
