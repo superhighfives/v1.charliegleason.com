@@ -2,6 +2,12 @@
   "index": {
     "title": "Articles"
   },
+  "the-web-audio-api" : {
+    "title": "The Web Audio API",
+    "tagline": "Or how to make thing pretty things from pretty sounds",
+    "hero": true,
+    "date": "22nd September 2014"
+  },
   "deploying-to-github-pages-with-gulp" : {
     "title": "Deploying To Github Pages With Gulp",
     "hero": true,
@@ -24,11 +30,5 @@
     "tagline": "Or how you can get a lot done in 365 days",
     "hero": true,
     "date": "31st December 2013"
-  },
-  "on-running" : {
-    "title": "On The Fallacy Of Running Alone",
-    "tagline": "Or how exhaustion makes me sentimental",
-    "date": "2nd June 2013",
-    "published": false
   }
 }

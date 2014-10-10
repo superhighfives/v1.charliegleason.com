@@ -21,10 +21,27 @@
     border-top: 1px solid $color-off-white
 
 .content
+  .title-bold
+    margin-top: 0
+    font-weight: bold
+    +type(14)
+  .title-formal
+    margin-top: 0
+    @extend %type-heading
+    +type(14)
+    +line-height(24)
+    text-transform: uppercase
+    letter-spacing: 0.1em
   .hero-strapline
     @extend %type-heading
     +type(24)
     +line-height(24)
+  .list-small
+    +type(14)
+  .list-spaced
+    +line-height(24)
+    li
+      padding: 0.2em 0
   figure
     @media (min-width: $screen-lg-min)
       margin-left: -195px
@@ -46,6 +63,7 @@
       @extend %type-heading
       @extend %type-light
       +type(24)
+      +line-height(28)
       font-style: italic
     footer
       color: $color-light-grey
@@ -69,3 +87,8 @@
     transition: color 0.3s, background-color 0.3s
     &:hover
       border-bottom-color:  $color-off-white
+
+.content-border-on-small
+  @media (max-width: $screen-xs-max)
+    border-top: 2px solid $color-off-white
+    padding-top: 40px
