@@ -6,7 +6,8 @@
     "title": "The Web Audio API",
     "tagline": "Or how to make thing pretty things from pretty sounds",
     "hero": true,
-    "date": "22nd September 2014"
+    "date": "22nd September 2014",
+    "published": false
   },
   "deploying-to-github-pages-with-gulp" : {
     "title": "Deploying To Github Pages With Gulp",
