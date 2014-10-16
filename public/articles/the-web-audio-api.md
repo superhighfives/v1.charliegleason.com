@@ -70,9 +70,11 @@ I also used [SnapSVG][snapsvg] for the opening animation, which is an incredibly
 
 ## Faith restored
 
-When I started True I struggled with finding inspiration. The web audio API, however, rescued me from that spiral of crippling self doubt.
+When I started [True][true-video] I struggled with finding inspiration. It was that quiet nagging feeling that chews away at your self esteem until you're sure you'll never create anything again and all of your achievements will inevitably, slowly, inexorably turn to dust and ash.
 
-If you're keen to delve in, [HTML5Rocks][html5rocks-tutorial] have a [great tutorial][html5rocks-tutorial] explaining the API in awesome detail, including some nifty examples.
+Worry not. The web audio API, however, pulled me from that spiral of crippling self doubt. So thanks, web audio API.
+
+If you're keen to delve in, [HTML5Rocks][html5rocks-tutorial] have a [great tutorial][html5rocks-tutorial] explaining the API in detail, including some super nifty examples.
 
 Oh, and you can watch [True][true-video] here.
 
