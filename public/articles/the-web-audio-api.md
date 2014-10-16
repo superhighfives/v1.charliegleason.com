@@ -63,7 +63,7 @@ A day later [True][true-video] was essentially done.
 
 ![The web audio API visualisation.](/images/articles/the-web-audio-api/image-true-02.jpg)
 
-I also used [SnapSVG][snapsvg] for the opening animation, which is an incredibly robust library for manipulating and animation SVGs.
+I also used [SnapSVG][snapsvg] for the opening animation, which is an incredibly robust library for manipulating and animating SVGs.
 
 
 ---
