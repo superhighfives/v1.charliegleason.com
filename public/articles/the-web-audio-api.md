@@ -40,7 +40,7 @@ I took all the footage and cut it together, created some fractal-esque visuals w
 
 I have spent a lot of my life talking about how incredible [Glen Maddern][glen-maddern-twitter] is. Aside from being just the raddest dude, his [work][glen-maddern-site] is incredible, groundbreaking and passionate.
 
-I remember he had mentioned the [Web Audio API][web-audio-api-mdn] had been making some strides, and I was curious whether I could try and visualise the audio (taken from a video object) to display using canvas. A day later, [True][true-video] was essentially done.
+I remember he had mentioned the [web audio API][web-audio-api-mdn] had been making some strides, and I was curious whether I could try and visualise the audio (taken from a video object) to display using canvas. A day later, [True][true-video] was essentially done.
 
 At its core is this piece of code:
 
@@ -53,7 +53,23 @@ context = new AudioContext()
 sourceNode = context.createMediaElementSource(video[0])
 ```
 
-Unfortunately Safari doesn't play nice, due to a bug in the way it returns audio data from `createMediaElementSource()`. It's [pretty widely known][safari-web-audio-bug-tweet] and it doesn't looks like it'll get fixed [any time soon][safari-web-audio-bug] 
+Unfortunately Safari doesn't play nice, due to a bug in the way it returns audio data from `createMediaElementSource()`. It's [pretty widely known][safari-web-audio-bug-tweet] and it doesn't looks like it'll get fixed [any time soon][safari-web-audio-bug].
+
+Using the [web audio API][web-audio-api-mdn], I was able to visualise the frequencies direct from the audio in the video element, in real time. And that's a simple use of the API—the possibilities for experimentation and collaboration are endless.
+
+![The True opening visual.](/images/articles/the-web-audio-api/image-true-01.jpg)
+
+I used [SnapSVG][snapsvg] for the opening animation, which is an incredibly robust library for manipulating and animation SVGs.
+
+![The web audio API visualisation.](/images/articles/the-web-audio-api/image-true-02.jpg)
+
+---
+
+## Faith restored
+
+When I started working on a new video for Brightly I initially struggled with finding inspiration. The web audio API, however, rescued me from that spiral of crippling self doubt.
+
+If you're keen to delve in, [HTML5Rocks][html5rocks-tutorial] have a [great tutorial][html5rocks-tutorial] explaining the API in awesome detail, including some nifty examples.
 
   [brightly]: http://wearebrightly.com
   [preflight-nerves]: http://tweetflight.wearebrightly.com
@@ -71,3 +87,5 @@ Unfortunately Safari doesn't play nice, due to a bug in the way it returns audio
   [true-video]: http://true.wearebrightly.com
   [safari-web-audio-bug]: http://trac.webkit.org/search?q=createMediaElementSource
   [safari-web-audio-bug-tweet]: https://twitter.com/marcoarment/status/489521301980069892
+  [snapsvg]: http://snapsvg.io/
+  [html5rocks-tutorial]: http://www.html5rocks.com/en/tutorials/webaudio/intro/
