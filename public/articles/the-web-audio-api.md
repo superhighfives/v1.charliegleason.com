@@ -71,6 +71,8 @@ When I started working on a new video for Brightly I initially struggled with fi
 
 If you're keen to delve in, [HTML5Rocks][html5rocks-tutorial] have a [great tutorial][html5rocks-tutorial] explaining the API in awesome detail, including some nifty examples.
 
+You can watch [True][true-video] here.
+
   [brightly]: http://wearebrightly.com
   [preflight-nerves]: http://tweetflight.wearebrightly.com
   [the-greylings]: http://music.wearebrightly.com/album/the-greylings
