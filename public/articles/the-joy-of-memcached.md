@@ -87,13 +87,19 @@ TODO: Explain .env.
 
 ### app.rb
 
+So `app.rb` is the heart of the application, managing the web server side of things, and accessing the tweets stored in the cache. (Which, you're correct in noticing, we haven't actually gotten around to caching yet.)
+
 ```ruby
 require 'sinatra'
 require 'dalli'
 require 'json'
 require 'newrelic_rpm'
 require 'twitter'
+```
 
+**Step 1:** Let's require the libraries that we initially set out in our `Gemfile`.
+
+```ruby
 #libraries
 require_relative './lib/twitter_search'
 require_relative './lib/cache'
@@ -123,6 +129,16 @@ end
 ```
 
 TODO: Explain app.rb. Simplify initially.
+
+---
+
+## So, now what?
+
+- Get it up on Heroku
+- Set up the cron job / scheduler
+- Marvel at the tweets
+
+Celebrate.
 
   [tweetflight]: http://tweetflight.wearebrightly.com
   [twitter-rate-limiting]: https://dev.twitter.com/rest/public/rate-limiting
