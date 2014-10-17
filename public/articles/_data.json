@@ -2,11 +2,28 @@
   "index": {
     "title": "Articles"
   },
+  "the-joy-of-memcached" : {
+    "title": "The Joy Of Memcached",
+    "tagline": "Or how to avoid rate limiting while serving up some super speedy third party data",
+    "hero": true,
+    "date": "17 October 2014",
+    "acknowledgements": {
+      "johnbarton": {
+        "name": "John Barton",
+        "role": "wrote the initial implementation at a breakneck pace"
+      },
+      "toolmantim": {
+        "name": "Tim Lucas",
+        "role": "refactored and tidied it up like a champion"
+      }
+    },
+    "published": false
+  },
   "the-web-audio-api" : {
     "title": "The Web Audio API",
     "tagline": "Or how to make thing pretty things from pretty sounds",
     "hero": true,
-    "date": "22nd September 2014",
+    "date": "16 October 2014",
     "acknowledgements": {
       "glenmaddern": {
         "name": "Glen Maddern",
@@ -17,13 +34,13 @@
   "deploying-to-github-pages-with-gulp" : {
     "title": "Deploying To Github Pages With Gulp",
     "hero": true,
-    "date": "19th September 2014"
+    "date": "19 September 2014"
   },
   "harp-gulp-and-browsersync" : {
     "title": "Harp, Gulp And BrowserSync",
     "tagline": "Or how I have a weird enthusiasm for static site generators",
     "hero": true,
-    "date": "18th August 2014",
+    "date": "18 August 2014",
     "acknowledgements": {
       "glenmaddern": {
         "name": "Glen Maddern",
@@ -35,6 +52,6 @@
     "title": "2013 In Retrospect",
     "tagline": "Or how you can get a lot done in 365 days",
     "hero": true,
-    "date": "31st December 2013"
+    "date": "31 December 2013"
   }
 }
