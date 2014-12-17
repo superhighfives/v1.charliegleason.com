@@ -41,6 +41,4 @@ Anyway, I also love lists, so here is a list of the things I am pretty chuffed h
 - Spent a weekend [in an actual castle](https://www.flickr.com/photos/superhighfives/sets/72157640012052605/).
 - Redesigned this very website.
 
----
-
 Onwards, 2015.
