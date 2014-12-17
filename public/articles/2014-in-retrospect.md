@@ -1,6 +1,6 @@
 I love the northern hemisphere.
 
-There is something so deeply, intrinsicly right about Christmas and winter. Growing up in Australia, I remember sweating on the porch, eating steaks from the barbeque and playing cricket on the street. It was amazing, but it felt off somehow.
+There is something so deeply, intrinsically right about Christmas and winter. Growing up in Australia, I remember sweating on the porch, eating steaks from the barbeque and playing cricket on the street. It was amazing, but it felt off somehow.
 
 Every book I’d read, every film I watched, they all suggested that Christmas was a time for eggnog and mulled wine and marshmallows on an open fire. Instead we would pack into the car and drive to the beach, and there are few times in the year where I’d feel less comfortable shirtless than having just eaten my weight in plum pudding.
 
