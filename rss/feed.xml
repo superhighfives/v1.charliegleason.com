@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charlie Gleason</title>
+    <link>http://charliegleason.com</link>
+    <description>Charlie is a designer, developer and internet enthusiast. Also sometimes musician.</description>
+    <atom:link href="http://charliegleason.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+          <item>
+            <title>2014 In Retrospect</title>
+            <description><![CDATA[<p>I love the northern hemisphere.</p>
+<p>There is something so deeply, intrinsicly right about Christmas and winter. Growing up in Australia, I remember sweating on the porch, eating steaks from the barbeque and playing cricket on the street. It was amazing, but it felt off somehow.</p>
+<p>Every book I’d read, every film I watched, they all suggested that Christmas was a time for eggnog and mulled wine and marshmallows on an open fire. Instead we would pack into the car and drive to the beach, and there are few times in the year where I’d feel less comfortable shirtless than having just eaten my weight in plum pudding.</p>
+<p>Like I said, I love the northern hemisphere.</p>
+<p>Anyway, I also love lists, so here is a list of the things I am pretty chuffed happened in 2014.</p>
+<p><img src="/images/articles/2014-in-retrospect/image-bigger-bird.jpg" alt="Extreme awesome."></p>
+<ul>
+<li>While on a trip to <a href="https://www.flickr.com/photos/superhighfives/sets/72157649618265026/">Center Parcs</a> I did falconry, and it was awesome. Birds are awesome.</li>
+</ul>
+<p><img src="/images/articles/2014-in-retrospect/image-bird.jpg" alt="Smaller awesome."></p>
+<ul>
+<li>I finally met a proper owl. <em>A proper owl</em>. That might not seem like the biggest deal, but I have a pretty big one drawn on my arm, so it seemed thematically appropriate.</li>
+</ul>
+<p><img src="/images/articles/2014-in-retrospect/image-rugby.jpg" alt="See, I didn’t make it up."></p>
+<ul>
+<li>I lost three stone after joining a <a href="http://www.pitchero.com/clubs/kingscrosssteelers/">rugby club</a>, and got man of the match at <a href="https://www.flickr.com/photos/superhighfives/sets/72157649102235201/">a tournament in Edinburgh</a>.</li>
+<li>I also tackled someone. Which sounds pretty part and parcel of joining a rugby team, but isn’t something you get to do very often as a functioning adult. It was wild.</li>
+</ul>
+<p><img src="/images/articles/2014-in-retrospect/image-futurebook.jpg" alt="Futurebook best publisher website award yay."></p>
+<ul>
+<li>I joined <a href="http://unbound.com/">Unbound</a>, and we won the best publisher website at the Futurebook awards.</li>
+</ul>
+<p><img src="/images/articles/2014-in-retrospect/image-true.jpg" alt="The music video for True."></p>
+<ul>
+<li><a href="http://true.wearebrightly.com/">I made a video</a> using the Web Audio API for True, which didn’t win anything.</li>
+<li>I technically got engaged for a first and <a href="https://www.flickr.com/photos/superhighfives/sets/72157648822983258/">second time</a> in the space of twelve months.</li>
+<li>Went to Berlin, Amsterdam and Iceland, and hung out with two-thirds of my siblings in Paris, Edinburgh and London.</li>
+</ul>
+<p><img src="/images/articles/2014-in-retrospect/image-punting.jpg" alt="Feel pretty guilty for making Ian the captain."></p>
+<ul>
+<li>Went <a href="https://www.flickr.com/photos/superhighfives/sets/72157646143633697/">punting in Oxford</a>.</li>
+<li>Recorded a new album, called <a href="http://music.wearebrightly.com/album/oh-infinity">Oh, Infinity</a>.</li>
+</ul>
+<p><img src="/images/articles/2014-in-retrospect/image-castle.jpg" alt="Woodsford Castle, specifically."></p>
+<ul>
+<li>Spent a weekend <a href="https://www.flickr.com/photos/superhighfives/sets/72157640012052605/">in an actual castle</a>.</li>
+<li>Redesigned this very website.</li>
+</ul>
+<hr>
+<p>Onwards, 2015.</p>
+]]></description>
+            <pubDate>Wed Dec 17 2014 00:00:00 GMT+0000 (GMT)</pubDate>
+            <link>http://charliegleason.com/articles/[object Object]</link>
+            <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
+          </item>
+        
+      
+    
+      
+        
+        
+          <item>
+            <title>The Web Audio API</title>
+            <description><![CDATA[<p>Being in a <a href="http://wearebrightly.com">band</a> can be pretty expensive.</p>
+<p>It seems like it wouldn&#39;t be, in this do-it-all-yourself digital age, but the reality is, it can be pretty expensive. Between studio hire, mixing, mastering, replication and distribution, it still takes a lot of people to get a song from your head to the wider universe. And that&#39;s just the music bit, without the marketing, PR and promotional costs involved in getting someone to actually listen to it.</p>
+<p>I like the web as a tool for hacking. The idea of mashing together existing technologies into something greater than the sum of their parts has always held a deep appeal to me. With the wealth of information on new API&#39;s, new tools and new processes, the web is a really lovely place to find inspiration and learn about new things.</p>
+<p>Which is good, because I can never seem to pull together the £2,000 it would take to get a halfway decent video made.</p>
+<p>So, when the going gets tough, get creative.</p>
+<hr>
+<h2>Tweetflight and Preflight Nerves</h2>
+<p><img src="/images/articles/the-web-audio-api/image-tweetflight.jpg" alt="Preflight Nerves, affectionately titled Tweetflight."></p>
+<p>For our first single, <a href="http://tweetflight.wearebrightly.com">Preflight Nerves</a>, I used the Twitter API and HTML5 video to make an interactive tweet-powered <a href="http://tweetflight.wearebrightly.com">giant internet karaoke session</a>. With over half a million views, the response was really wild and I am proud of what it achieved. But afterwards I felt a bit lost on what to do next, so we recorded a <a href="http://music.wearebrightly.com/album/the-greylings">really stripped back EP</a> while we took some time to regroup.</p>
+<p>Then I moved to London. <a href="http://wearebrightly.com">Brightly</a> continued via email and Dropbox, and in March I flew to Australia to make our second record. We hit the studio running, and ended up with <a href="http://music.wearebrightly.com/album/oh-infinity">Oh, Infinity</a>.</p>
+<p>We decided on the first single, <a href="https://soundcloud.com/wearebrightly/true">True</a>, and the question came up again: what would we do for a video? I had experimented with [gifs and Giphy][fox], Vine videos, illustrations, SVGs and wearable sensors, but it never quite seemed to click. And I had no idea what to do next.</p>
+<hr>
+<h2>Back to the drawing board</h2>
+<p>Before Christmas I got <a href="https://www.flickr.com/photos/superhighfives/sets/72157637091939475/">engaged in Iceland</a>, which was pretty great. I also took a lot of footage while we drove around, weaving between snowy mountains and <a href="http://en.wikipedia.org/wiki/Gullfoss">huge waterfalls</a> and slow moving glaciers and all of the beers.</p>
+<p><img src="/images/articles/the-web-audio-api/image-smoke.jpg" alt="I think that&#39;s steam?"></p>
+<p><img src="/images/articles/the-web-audio-api/image-road.jpg" alt="This, I know, is a road."></p>
+<p>Such mountain. Very snow. But I digress.</p>
+<p>I took all the footage and cut it together, created some fractal-esque visuals with filters, and used <a href="http://angularjs.org/">Angular.js</a> to display the lyrics as they&#39;re sung. I timed it using a <a href="http://true.wearebrightly.com/data/data.json">pretty simple json file</a>, watched it through, and felt... kind of disappointed. It was pretty, but it wasn&#39;t gripping. There was nothing new or interesting there, and I had spent a while fiddling with it. I felt like I was sinking time without cracking the core problem—there was nothing really dynamic happening.</p>
+<hr>
+<h2>A love letter</h2>
+<p>I have spent a lot of my life talking about how incredible <a href="https://twitter.com/@glenmaddern">Glen Maddern</a> is. Aside from being just the raddest dude, his <a href="http://glenmaddern.com/">work</a> is incredible, groundbreaking and deeply passionate.</p>
+<p>I remembered that he mentioned the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">web audio API</a> had been making some strides, and I was curious whether I could try and visualise the audio (taken from a video object) to display using canvas.</p>
+<p>At the core is this piece of code:</p>
+<pre><code class="language-javascript">//Make sure AudioContext is available (Webkit uses a vendor prefix)
+window.AudioContext = window.AudioContext || window.webkitAudioContext
+
+//createMediaElementSource means we can grab the audio from our video
+context = new AudioContext()
+sourceNode = context.createMediaElementSource(video[0])</code></pre>
+<p>Using <code>createMediaElementSource()</code> I was able to visualise the frequencies direct from the audio, within the video element, in real time. And that&#39;s a simple use of the API—the possibilities for experimentation are essentially endless.</p>
+<p>(Unfortunately Safari doesn&#39;t play nice, due to a bug in the way it returns audio data from <code>createMediaElementSource()</code>. It&#39;s <a href="https://twitter.com/marcoarment/status/489521301980069892">pretty widely known</a> and it doesn&#39;t looks like it&#39;ll get fixed <a href="http://trac.webkit.org/search?q=createMediaElementSource">any time soon</a>.)</p>
+<p>A day later <a href="http://true.wearebrightly.com">True</a> was essentially done.</p>
+<p><img src="/images/articles/the-web-audio-api/image-true-01.jpg" alt="The True opening visual."></p>
+<p><img src="/images/articles/the-web-audio-api/image-true-02.jpg" alt="The web audio API visualisation."></p>
+<p>I also used <a href="http://snapsvg.io/">SnapSVG</a> for the opening animation, which is an incredibly robust library for manipulating and animating SVGs.</p>
+<hr>
+<h2>Faith restored</h2>
+<p>When I started <a href="http://true.wearebrightly.com">True</a> I struggled with finding inspiration. It was that quiet nagging feeling that chews away at your self esteem until you&#39;re sure you&#39;ll never create anything again and all of your achievements will inevitably, slowly, inexorably turn to dust and ash.</p>
+<p>Worry not. The web audio API, however, pulled me from that spiral of crippling self doubt. So thanks, web audio API.</p>
+<p>If you&#39;re keen to delve in, <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">HTML5Rocks</a> have a <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">great tutorial</a> explaining the API in detail, including some super nifty examples.</p>
+<p>Oh, and you can watch <a href="http://true.wearebrightly.com">True</a> here.</p>
+]]></description>
+            <pubDate>Thu Oct 16 2014 00:00:00 GMT+0100 (BST)</pubDate>
+            <link>http://charliegleason.com/articles/[object Object]</link>
+            <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
+          </item>
+        
+      
+    
+      
+        
+        
+          <item>
+            <title>Deploying To Github Pages With Gulp</title>
+            <description><![CDATA[<p>The older I get, the more I realise that I do not like <a href="http://en.wikipedia.org/wiki/Don&#39;t_repeat_yourself">doing things more than once</a>.</p>
+<p>When I first starting making the Internets, I would spend a massive amount of cognitive energy transferring things via FTP; dragging files to <a href="transmit">Transmit</a>, hoping I hadn&#39;t inadvertently overwritten something super important. It was dark, people. It was a dark time.</p>
+<p><img src="/images/articles/deploying-to-github-pages-with-gulp/image-no.jpg" alt="No, FTP. No."></p>
+<p>Fortunately, this is no longer the case. You don&#39;t have to live like this. <strong>We</strong> don&#39;t have to live like this.</p>
+<p>I&#39;ve been using <a href="http://pages.github.com/">Github Pages</a> to deploy static sites for a while now. It&#39;s quick, easy, and pretty painless. You can easily get a static site set up and hosted in no time, and it&#39;s free. Win win! I actually used it for the client side of <a href="http://tweetflight.wearebrightly.com">Tweetflight</a>.</p>
+<p>If you&#39;ve run through my <a href="http://charliegleason.com/articles/harp-gulp-and-browsersync">Harp, Gulp and Browsersync</a> tutorial, you can use that as the basis for deployment. If you haven&#39;t, all you need is a <a href="https://github.com/repositories/new">repo</a> and a directory to deploy. Easy as.</p>
+<p>First up, you&#39;ll want to install <a href="http://gulpjs.com/">gulp</a> and <a href="https://github.com/rowoot/gulp-gh-pages">gulp-gh-pages</a>, which will handle the deployment.</p>
+<hr>
+<h2>Getting started</h2>
+<p>So, you&#39;ll need a <code>package.json</code> file, to use manage the required Node packages.</p>
+<pre><code class="language-bash">npm init</code></pre>
+<p>If you don&#39;t have <a href="http://nodejs.org/">Node.js</a>, you can install it <a href="http://nodejs.org/">here</a>.</p>
+<p>It will ask you some questions about your project, and it&#39;s pretty friendly. Good for you, NPM. Good. For. You.</p>
+<p>Right. To celebrate, let&#39;s enjoy a photo of a cat in the snow.</p>
+<p><img src="/images/articles/deploying-to-github-pages-with-gulp/image-snowcat.jpg" alt="Yes. You are the best cat."></p>
+<p>So good.</p>
+<p>Add <a href="http://gulpjs.com/">Gulp</a>, which powers this glorious, gorgeous beast.</p>
+<pre><code class="language-bash">npm install gulp --save-dev</code></pre>
+<p>Then you&#39;ll need to add <a href="https://github.com/rowoot/gulp-gh-pages">gulp-gh-pages</a>.</p>
+<pre><code class="language-bash">npm install gulp-gh-pages --save-dev</code></pre>
+<p>Now, in your <code>gulpfile.js</code>, add the following:</p>
+<pre><code class="language-js">var gulp        = require(&#39;gulp&#39;);
+var deploy      = require(&#39;gulp-gh-pages&#39;);
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task(&#39;deploy&#39;, function () {
+  return gulp.src(&quot;./dist/**/*&quot;)
+    .pipe(deploy())
+});</code></pre>
+<h2>So what&#39;s going on here?</h2>
+<p>We&#39;re defining a <strong>task</strong>, called <code>deploy</code>. You could get gulp to run a build task here, if you needed to, prior to deploying it. To do so, just update <code>&#39;deploy&#39;, function() {</code> to <code>&#39;deploy, [&#39;build&#39;], function () {</code> (or whatever the name of you gulp build task is) and gulp will take care of it. It&#39;s one of the many reasons gulp is wild.</p>
+<p>I used gulp four times in that paragraph. Calm down, Charlie.</p>
+<p><code>/dist</code> is the directory we&#39;re deploying, and <code>/**/*</code> means it will deploy recursively. All files and directories inside of <code>/dist</code> will be included.</p>
+<hr>
+<h2>Github-ing</h2>
+<p>So, given that you&#39;re deploying to Github, you&#39;re going to need to have your site in a repository. You can see an example I set up at <a href="https://github.com/superhighfives/testing-gulp-gh-pages">testing-gulp-gh-pages</a>. If you don&#39;t already have your site on <a href="http://github.com/">Github</a>, you should anyway. It&#39;s awesome, and means you&#39;ll be using proper version control for your site. Which is a huge piece of mind. Which you obviously deserve.</p>
+<p>You&#39;ll want to avoid pushing your whole <code>/node_modules</code> directory on Github, as it&#39;s being managed by your <code>package.json</code> file. To stop this happening, make a file called <code>.gitignore</code>. That&#39;s essentially a space where you can <a href="https://help.github.com/articles/ignoring-files">list files you don&#39;t want to end up in source control</a>, each on a new line.</p>
+<p>Just make sure node_modules is listed:</p>
+<pre><code>node_modules</code></pre>
+<p>That way, when you push to Github, you won&#39;t accidentally push all of your sites Node depedencies.</p>
+<p>If you don&#39;t want to commit your <code>/dist</code>, or the folder that is holding your built site, you can add that too:</p>
+<pre><code>node_modules
+dist</code></pre>
+<p>It really depends on how you&#39;re managing your folder structure. There&#39;s no wrong way, but it&#39;s worth noting that if your repo is public you should avoid putting any fancy paid fonts or similar in there.</p>
+<p>In that case you&#39;re likely better hosting them remotely with <a href="http://aws.amazon.com/s3/">S3</a> or <a href="http://www.rackspace.co.uk/cloud/files">Rackspace</a>. I use Rackspace, personally.</p>
+<hr>
+<h2>Custom domains</h2>
+<p>If you want to use a <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages">custom domain</a> for your Github hosted site, you&#39;ll need to do two things first.</p>
+<ol>
+<li><p>Make a text-based <code>CNAME</code> file that will end up in the root of the directory you&#39;re deploying. For example, <code>/dist/CNAME</code>. All it needs inside is the url you want to point to your new site. For me, it&#39;s <code>charliegleason.com</code>.</p>
+</li>
+<li><p>Update your DNS records. Github has a <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages">pretty good walkthrough of how to do this</a>.</p>
+</li>
+</ol>
+<p>When you&#39;re ready to deploy, the folder you&#39;re pushing to Github should have CNAME in the root. As long as that&#39;s in there, you&#39;re golden.</p>
+<p>And then you&#39;re all set.</p>
+<hr>
+<h2>Fire away!</h2>
+<p>When you&#39;re ready to deploy, push the latest changes to your repo to Github.</p>
+<pre><code class="language-bash">git add . # Add any untracked files
+git commit -va # Commit the changes
+git push # Push it to Github</code></pre>
+<p>You&#39;ll also need to make sure you have a <code>gh-pages</code> branch, if you don&#39;t already.</p>
+<pre><code class="language-bash">git checkout --orphan gh-pages
+git rm -rf .
+touch README.md
+git add README.md
+git commit -m &quot;Init gh-pages&quot;
+git push --set-upstream origin gh-pages
+git checkout master</code></pre>
+<p>So, now you just need to run your deploy task.</p>
+<pre><code class="language-bash">gulp deploy</code></pre>
+<p>And voila. You can visit your fancy new site at <code>your-username.github.io/your-reponame</code>, or (if the DNS has propogated) at the custom domain you set up.</p>
+<p>You can see <a href="http://superhighfives.github.io/testing-gulp-gh-pages/">one I prepared earlier</a>, which is using the testing-gulp-gh-pages <a href="https://github.com/superhighfives/testing-gulp-gh-pages">repo</a>.</p>
+<p><img src="/images/articles/deploying-to-github-pages-with-gulp/image-yes.jpg" alt="Yes, Github Pages. Yes."></p>
+<p>You&#39;re great. Good for you. If you have any problems, I can probably help. Just <a href="mailto:hi@charliegleason.com">email me</a>.</p>
+]]></description>
+            <pubDate>Fri Sep 19 2014 00:00:00 GMT+0100 (BST)</pubDate>
+            <link>http://charliegleason.com/articles/[object Object]</link>
+            <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
+          </item>
+        
+      
+    
+      
+        
+        
+          <item>
+            <title>Harp, Gulp And BrowserSync</title>
+            <description><![CDATA[<p>A couple of weeks ago I decided to rejig my personal site, because I hit a particularly tough patch in <a href="http://www.saintsrow.com/uk">Saints Row 4</a> and what else would I spend a Saturday doing? Previously I&#39;d had good experiences with <a href="https://github.com/mdub/pith">Pith</a>, which is a really solid Ruby based static site generator, but I&#39;d overcomplicated the whole thing and it felt a bit clunky. Plus I wanted to try some new fanciness.</p>
+<p>After setting up <a href="http://jekyllrb.com/">Jekyll</a>, another Ruby based static site generator (we should acronym that, no?), I got a <a href="https://twitter.com/glenmaddern/status/499330737431015425">tweet</a> from Glen Maddern, mentioning a deep affection for <a href="http://harpjs.com/">Harp.js</a>. It made me realise that though I&#39;ve admired it from afar, I hadn&#39;t really messed much with <a href="http://nodejs.org/">Node.js</a>, and a personal site is a pretty good place to get your hands dirty.</p>
+<p>At the same time, I was hearing good things about <a href="http://gulpjs.com/">Gulp.js</a>, the Node based streaming build system, and I&#39;d always found it&#39;s predecessor <a href="http://gruntjs.com/">Grunt.js</a> a little verbose.</p>
+<p><a href="http://browsersync.io">BrowserSync</a> was the final piece of the puzzle, and I was primarily curious about its much touted ability to inject CSS changes without reloading the page.</p>
+<p>So I dug in.</p>
+<hr>
+<h2>Setting it all up</h2>
+<p>So, we&#39;ll need <a href="http://gulpjs.com/">Gulp</a>, <a href="http://harpjs.com/">Harp</a> and <a href="http://browsersync.io">BrowserSync</a>.</p>
+<hr>
+<h3>Getting started with Gulp</h3>
+<p>The first thing I noticed, when checking out Gulp, was the simplicity. After wrestling with Grunt for so long, I was chuffed to see a single named function was all that&#39;s needed to get started.</p>
+<p>(To be fair, I&#39;ve not written anything particularly onerous in Gulp, so that&#39;s a bit harsh.)</p>
+<p>First, make sure you&#39;ve got <a href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started">Gulp installed</a>.</p>
+<pre><code class="language-bash">npm install --global gulp</code></pre>
+<p>Then you&#39;ll need a <code>gulpfile.js</code> at the root of your project.</p>
+<pre><code class="language-javascript">var gulp = require(&#39;gulp&#39;);
+
+gulp.task(&#39;default&#39;, function() {
+  console.log(&quot;Gulp lol look at me being rad.&quot;);
+});</code></pre>
+<p>As it&#39;s the default task, just run <code>gulp</code>.</p>
+<pre><code class="language-javascript">gulp</code></pre>
+<hr>
+<h3>Getting started with Harp</h3>
+<p>Similarly, Harp is super straightforward.</p>
+<pre><code class="language-bash">sudo npm install -g harp</code></pre>
+<p>You can then use harp to generate the bones of a project.</p>
+<pre><code class="language-bash">harp init myproject</code></pre>
+<p>That will give you the barest of projects, using <a href="http://lesscss.org/">Less</a> for styles and <a href="http://jade-lang.com/">Jade</a> for HTML. Personally, I prefer <a href="http://sass-lang.com/">Sass</a> and <a href="http://embeddedjs.com/">EJS</a>, but it&#39;s not hard to change things over. Harp tends towards convention over configuration, so all you really need is a single .ejs or .jade page and you&#39;re good to go.</p>
+<hr>
+<h3>Getting started with BrowserSync</h3>
+<p>Finally, <a href="http://browsersync.io">BrowserSync</a>.</p>
+<p>Technically you don&#39;t need to install this globally, unless you&#39;re using it separately from the command line, so you can skip this step and just have it in your npm <code>package.json</code>.</p>
+<p>But, if you&#39;re keen:</p>
+<pre><code class="language-bash">npm install -g browser-sync</code></pre>
+<p>For this example we&#39;ll run BrowserSync via Gulp, so you don&#39;t need to do anything else at this point. You can run from the command line though, using the <code>browser-sync</code> command.</p>
+<hr>
+<h2>Setting the scene</h2>
+<p>So, there are some dependencies involved. To make life a little easier, I&#39;ve pulled together the cleverly titled boilerplate, <a href="https://github.com/superhighfives/harp-gulp-browsersync-boilerplate">harp-gulp-browsersync-boilerplate</a>. You can use it to get the whole thing up and running straight away, and then I&#39;ll go through and explain what&#39;s happening. Cool? Cool.</p>
+<p>Let&#39;s take a moment to look at a lolcat.</p>
+<p><img src="/images/articles/harp-gulp-and-browsersync/image-lolcat.jpg" alt="Phew."></p>
+<p>That was awesome.</p>
+<p>So, Harp has a really great feature where you can use any repo as a boilerplate. To use my super-fancy repo, you just need the <code>--boilerplate</code> (or -b) option.</p>
+<pre><code class="language-bash">harp init src --boilerplate superhighfives/harp-gulp-browsersync-boilerplate</code></pre>
+<p>Then, once it&#39;s downloaded (maybe make a tea or something?) you can jump into src and grab the dependencies.</p>
+<pre><code class="language-bash">npm install</code></pre>
+<p>Maybe make another tea? You may be sick of tea by now. I&#39;m not confident in how much tea you drink each day, so I don&#39;t want to be presumptious.</p>
+<p>Finally, run <code>gulp</code>.</p>
+<p><img src="/images/articles/harp-gulp-and-browsersync/image-terminal.png" alt="An example of the terminal output you should probably see."></p>
+<p>Here&#39;s what is happening. Gulp fires up Harp on port 9000 (you can change that in the <code>gulpfile.js</code>), and BrowserSync proxies it, usually on 3000. So just hit up <code>localhost:3000</code> and you&#39;re ready to party. It&#39;s worth checking the output in your terminal though, as it will give you the definitive address.</p>
+<hr>
+<h2>Changing things, because you can</h2>
+<p>Now you can edit <code>main.sass</code> and the updates will happen in real-time. It&#39;s the same system that&#39;s currently running this blog, and you can see the full range of tasks (including deploying straight to <a href="https://pages.github.com/">Github Pages</a>) in the source <a href="https://github.com/superhighfives/charliegleason.com">over on Github</a>.</p>
+<p>This is the sound of you succeeding, you beautiful human.</p>
+]]></description>
+            <pubDate>Mon Aug 18 2014 00:00:00 GMT+0100 (BST)</pubDate>
+            <link>http://charliegleason.com/articles/[object Object]</link>
+            <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
+          </item>
+        
+      
+    
+      
+        
+        
+          <item>
+            <title>2013 In Retrospect</title>
+            <description><![CDATA[<p>Gosh, 2013 was pretty great.</p>
+<p>From continuing to build up <a href="http://goodfil.ms">Goodfilms</a>, the social film site I co-founded, to branching out on a range of projects with our digital agency Codename, I worked on a massive amount of stuff that I&#39;m incredibly proud of.</p>
+<p>I went to <a href="http://www.flickr.com/photos/superhighfives/sets/72157635231348802/">Turkey</a>, and <a href="http://www.flickr.com/photos/superhighfives/sets/72157635369438470/">Paris</a>, and <a href="http://www.flickr.com/photos/superhighfives/sets/72157637091939475/">Iceland</a>, and drove <a href="http://www.flickr.com/photos/superhighfives/sets/72157635231336084/">all over England</a> on a ridiculous road trip. <a href="http://www.flickr.com/photos/superhighfives/10657449694/">I got engaged</a>. I started working with <a href="http://unbound.co.uk/">Unbound</a>, I lost 24kg, and I fell off my bike.</p>
+<p>Actually, falling off my bike wasn&#39;t a highlight.</p>
+<p><img src="/images/articles/2013-in-retrospect/image-ow.jpg" alt="Do not fall off your bike. Good life advice."></p>
+<p>Oh, and <a href="http://www.flickr.com/photos/superhighfives/9590952555/">I moved to London</a>.</p>
+<p>Here are a couple of the things I&#39;m really proud of, in no particular order.</p>
+<ul>
+<li><a href="http://tweetflight.wearebrightly.com/">Tweetflight</a></li>
+<li><a href="http://beginnings.wearebrightly.com/">Beginnings &amp; Ending Project</a></li>
+<li>Running my first half marathon.</li>
+<li><a href="http://2013.nononono.co/">Nononono</a></li>
+<li><a href="http://music.wearebrightly.com/album/beginnings-endings">Beginnings &amp; Endings</a></li>
+<li>Getting <a href="http://tweetflight.wearebrightly.com/">Tweetflight</a> on the front page of <strong>The Pirate Bay</strong> for three days.</li>
+<li><a href="http://codename.io/">Codename</a></li>
+<li><a href="http://trova.com.au/">Trova</a></li>
+<li><del>Finally starting a music blog, even if I don&#39;t write anywhere near enough for it.</del> Well, that was short lived.</li>
+<li><a href="http://thiskindofagility.com/">This Kind of Agility</a></li>
+<li><a href="http://missladybirdcakes.com/">Miss Ladybird Cakes</a></li>
+<li><a href="http://catsofistanbul.charliegleason.com/">Cats of Istanbul</a></li>
+<li><a href="http://music.wearebrightly.com/album/the-greylings">The Greylings</a></li>
+<li><a href="http://unbound.co.uk/">Unbound</a></li>
+</ul>
+<p>Onwards, 2014! Onwards!</p>
+]]></description>
+            <pubDate>Tue Dec 31 2013 00:00:00 GMT+0000 (GMT)</pubDate>
+            <link>http://charliegleason.com/articles/[object Object]</link>
+            <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
+          </item>
+        
+      
+    
+  </channel>
+</rss>
