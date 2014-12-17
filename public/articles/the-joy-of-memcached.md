@@ -83,7 +83,9 @@ TWITTER_OAUTH_TOKEN=TOKEN_GOES_HERE
 TWITTER_OAUTH_TOKEN_SECRET=TOKEN_SECRET_GOES_HERE
 ```
 
-TODO: Explain .env.
+The `.env` file holds your environment variables. You'll need to set these on Heroku when you eventually deploy, but for local development, these will be available within the application automagically.
+
+The first line tells memcached where access its server, while the second set holds the credentials you'll need to access the Twitter search. Each API will have itself own version of the above, depending on their authentication process.
 
 ### app.rb
 
@@ -130,6 +132,9 @@ end
 
 TODO: Explain app.rb. Simplify initially.
 
+- Add the caching information
+- Set up twitter api
+
 ---
 
 ## So, now what?
@@ -137,6 +142,10 @@ TODO: Explain app.rb. Simplify initially.
 - Get it up on Heroku
 - Set up the cron job / scheduler
 - Marvel at the tweets
+
+---
+
+## Finally?
 
 Celebrate.
 

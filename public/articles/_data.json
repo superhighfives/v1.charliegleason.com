@@ -19,6 +19,12 @@
     },
     "published": false
   },
+  "2014-in-retrospect" : {
+    "title": "2014 In Retrospect",
+    "tagline": "Or how a season of mulled wine and custard makes me sentimental",
+    "hero": true,
+    "date": "17 December 2014"
+  },
   "the-web-audio-api" : {
     "title": "The Web Audio API",
     "tagline": "Or how to make thing pretty things from pretty sounds",
