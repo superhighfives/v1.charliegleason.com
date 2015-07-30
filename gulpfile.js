@@ -3,7 +3,7 @@ var harp        = require('harp')
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 var deploy      = require('gulp-gh-pages');
-var cp          = require('child_process');
+var shell       = require('gulp-shell');
 
 /**
  * Serve the Harp Site
@@ -39,17 +39,21 @@ gulp.task('serve', function () {
  * Serve the site in production
  */
 
-gulp.task('production', function (done) {
-  cp.exec('NODE_ENV=production sudo harp server --port 80', {stdio: 'inherit'})
-    .on('close', done)
+gulp.task('production', function () {
+  return gulp.src('')
+    .pipe(shell([
+      'NODE_ENV=production sudo harp server --port 80'
+    ]))
 });
 
 /**
  * Build the Harp Site
  */
-gulp.task('build', function (done) {
-  cp.exec('harp compile . dist', {stdio: 'inherit'})
-    .on('close', done)
+gulp.task('build', function () {
+  return gulp.src('')
+    .pipe(shell([
+      'harp compile . dist'
+    ]))
 });
 
 /**
