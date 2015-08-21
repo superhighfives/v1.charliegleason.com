@@ -11,15 +11,12 @@
         <% if(article.published !== false || environment=='development') { %>
           <% var classes = article.published == false ? 'unpublished' : '' %>
           <a href="/articles/<%- slug %>" class="article-link <%- classes %>">
-            <% if(typeof article.hero != "undefined" && article.hero) { %>
-              <img class="banner" src="/images/articles/<%- slug %>/hero.jpg" title="<%- article.title %>" />
-            <% } %>
             <ul class="list-unstyled article-link-details">
               <li class="article-link-title"><%- article.title %></li>
+              <li class="article-link-date"><%- article.date %></li>
               <% if(typeof article.tagline != "undefined") { %>
                 <li class="article-link-tagline"><%- article.tagline %></li>
               <% } %>
-              <li class="article-link-date"><%- article.date %></li>
             </ul>
           </a>
         <% } %>

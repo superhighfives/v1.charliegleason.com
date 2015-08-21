@@ -2,6 +2,19 @@
   "index": {
     "title": "Articles"
   },
+  "css-modules-jspm-react-joy" : {
+    "title": "CSS Modules, JSPM, React, joy",
+    "tagline": "A tutorial on writing cleaner, happier CSS",
+    "hero": true,
+    "date": "19 August 2015",
+    "acknowledgements": {
+      "glenmaddern": {
+        "name": "Glen Maddern",
+        "role": "and the CSS Modules team, for making the internet more rad"
+      }
+    },
+    "published": false
+  },
   "the-joy-of-memcached" : {
     "title": "The Joy Of Memcached",
     "tagline": "Or how to avoid rate limiting while serving up some super speedy third party data",
@@ -21,7 +34,6 @@
   },
   "2014-in-retrospect" : {
     "title": "2014 In Retrospect",
-    "tagline": "Or how a season of mulled wine and custard makes me sentimental",
     "hero": true,
     "date": "17 December 2014"
   },
@@ -56,7 +68,6 @@
   },
   "2013-in-retrospect" : {
     "title": "2013 In Retrospect",
-    "tagline": "Or how you can get a lot done in 365 days",
     "hero": true,
     "date": "31 December 2013"
   }
