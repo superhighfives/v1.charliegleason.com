@@ -44,6 +44,20 @@
     "date": "Early 2011",
     "published": true
   },
+  "i-will-never-let-you-go": {
+    "title": "I Will Never Let You Go",
+    "tagline": "An interactive WebGL music video.",
+    "link": "https://iwillneverletyougo.com",
+    "date": "Late 2015",
+    "published": true
+  },
+  "lets-run-away-together": {
+    "title": "Let's Run Away Together",
+    "tagline": "Things I like, using Jekyll and Github Pages.",
+    "link": "http://letsrunawaytogether.com",
+    "date": "Late 2015",
+    "published": true
+  },
   "moran-and-cato": {
     "title": "Moran & Cato",
     "tagline": "A collective live music project.",
