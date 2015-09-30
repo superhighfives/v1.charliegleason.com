@@ -1,0 +1,1 @@
+Built on [Rails](http://rubyonrails.org/), with [Gulp](http://gulpjs.com/) tasks to simplify and bypass aspects of the asset pipeline, the third iteration of the Brightly site embraces the watercolours pretty aggressively.

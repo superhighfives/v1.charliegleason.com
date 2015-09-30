@@ -19,8 +19,14 @@
   "brightly-deux": {
     "title": "Brightly 2.0",
     "tagline": "A new website for my music project, Brightly.",
-    "link": "http://wearebrightly.com",
     "date": "Early 2014",
+    "published": true
+  },
+  "brightly-trois": {
+    "title": "Brightly 3.0",
+    "tagline": "An even newer website for my music project, Brightly.",
+    "link": "http://wearebrightly.com",
+    "date": "Late 2015",
     "published": true
   },
   "cats-of-istanbul": {
