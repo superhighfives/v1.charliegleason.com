@@ -3,6 +3,13 @@
     "title": "Projects"
   },
 
+  "anatole": {
+    "title": "Anatole",
+    "tagline": "A WebGL-powered home for the Sydney based orchestral laptop maestro.",
+    "link": "http://anatolemusic.com",
+    "date": "Late 2015",
+    "published": true
+  },
   "beginnings-and-endings": {
     "title": "Beginnings & Endings",
     "tagline": "A social world map to share and track a song.",
