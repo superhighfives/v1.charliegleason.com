@@ -2,7 +2,20 @@
   "index": {
     "title": "Projects"
   },
-
+  "books-of-note": {
+    "title": "Books of Note",
+    "tagline": "A React-powered universal app for Shaun Usher's incredible Books of Note.",
+    "link": "http://booksofnote.com",
+    "date": "Late 2015",
+    "published": true
+  },
+  "andrei-eremin": {
+    "title": "Andrei Eremin",
+    "tagline": "A Rails-based CMS for artist / producer / superhero Andrei Eremin.",
+    "link": "http://andreieremin.com",
+    "date": "Late 2015",
+    "published": false
+  },
   "anatole": {
     "title": "Anatole",
     "tagline": "A WebGL-powered home for the Sydney based orchestral laptop maestro.",
@@ -10,51 +23,11 @@
     "date": "Late 2015",
     "published": true
   },
-  "beginnings-and-endings": {
-    "title": "Beginnings & Endings",
-    "tagline": "A social world map to share and track a song.",
-    "link": "http://beginnings.wearebrightly.com",
-    "date": "Early 2013",
-    "published": true
-  },
-  "brightly": {
-    "title": "Brightly",
-    "tagline": "A website for my music project, Brightly",
-    "date": "Late 2011",
-    "published": true
-  },
-  "brightly-deux": {
-    "title": "Brightly 2.0",
-    "tagline": "A new website for my music project, Brightly.",
-    "date": "Early 2014",
-    "published": true
-  },
   "brightly-trois": {
     "title": "Brightly 3.0",
     "tagline": "An even newer website for my music project, Brightly.",
     "link": "http://wearebrightly.com",
     "date": "Late 2015",
-    "published": true
-  },
-  "cats-of-istanbul": {
-    "title": "Cats Of Istanbul",
-    "tagline": "While in Istanbul I took a photo of every cat I saw.",
-    "link": "http://catsofistanbul.charliegleason.com",
-    "date": "Mid 2013",
-    "published": true
-  },
-  "codename": {
-    "title": "Codename",
-    "tagline": "The central hub for our agency collective.",
-    "link": "http://codename.io",
-    "date": "Mid 2013",
-    "published": true
-  },
-  "goodfilms": {
-    "title": "Goodfilms",
-    "tagline": "A social film site for finding and sharing movies.",
-    "link": "http://goodfil.ms",
-    "date": "Early 2011",
     "published": true
   },
   "i-will-never-let-you-go": {
@@ -71,53 +44,11 @@
     "date": "Late 2015",
     "published": true
   },
-  "moran-and-cato": {
-    "title": "Moran & Cato",
-    "tagline": "A collective live music project.",
-    "link": "http://moranandcato.com",
-    "date": "Late 2012",
-    "published": true
-  },
-  "nononono": {
-    "title": "Nononono",
-    "tagline": "Share your opinion with all of the conviction.",
-    "link": "http://nononono.co",
-    "date": "Early 2013",
-    "published": true
-  },
-  "the-98-against": {
-    "title": "The 98 Against",
-    "tagline": "Equality, accountability and screen scraping.",
-    "link": "http://the98against.com",
-    "date": "Late 2012",
-    "published": true
-  },
-  "this-kind-of-agility": {
-    "title": "This Kind Of Agility",
-    "tagline": "A random Arrested Development episode selector.",
-    "link": "http://thiskindofagility.com",
-    "date": "Mid 2013",
-    "published": true
-  },
-  "trova": {
-    "title": "Trova",
-    "tagline": "An Australian based shopping style discovery engine.",
-    "link": "http://trova.com.au",
-    "date": "Mid 2013",
-    "published": true
-  },
   "true": {
     "title": "True",
     "tagline": "An animated music video, powered by the Web Audio API.",
     "link": "http://true.wearebrightly.com",
     "date": "Late 2014",
-    "published": true
-  },
-  "tweetflight": {
-    "title": "Tweetflight",
-    "tagline": "An interactive tweet-powered music video.",
-    "link": "http://tweetflight.wearebrightly.com",
-    "date": "Early 2013",
     "published": true
   },
   "unbound": {
@@ -127,6 +58,67 @@
     "date": "Late 2013",
     "published": true
   },
+    "brightly-deux": {
+    "title": "Brightly 2.0",
+    "tagline": "A new website for my music project, Brightly.",
+    "date": "Late 2013",
+    "published": true
+  },
+  "codename": {
+    "title": "Codename",
+    "tagline": "The central hub for our agency collective.",
+    "link": "http://codename.io",
+    "date": "Mid 2013",
+    "published": true
+  },
+  "cats-of-istanbul": {
+    "title": "Cats Of Istanbul",
+    "tagline": "While in Istanbul I took a photo of every cat I saw.",
+    "link": "http://catsofistanbul.charliegleason.com",
+    "date": "Mid 2013",
+    "published": true
+  },
+  "trova": {
+    "title": "Trova",
+    "tagline": "An Australian based shopping style discovery engine.",
+    "date": "Mid 2013",
+    "published": true
+  },
+  "this-kind-of-agility": {
+    "title": "This Kind Of Agility",
+    "tagline": "A random Arrested Development episode selector.",
+    "link": "http://thiskindofagility.com",
+    "date": "Mid 2013",
+    "published": true
+  },
+  "wds13": {
+    "title": "Web Directions South",
+    "tagline": "The conference site for the 2013 Web Directions South.",
+    "link": "http://webdirections.org/wds13",
+    "date": "Mid 2013",
+    "published": true
+  },
+  "tweetflight": {
+    "title": "Tweetflight",
+    "tagline": "An interactive tweet-powered music video.",
+    "link": "http://tweetflight.wearebrightly.com",
+    "date": "Early 2013",
+    "published": true
+  },
+  "beginnings-and-endings": {
+    "title": "Beginnings & Endings",
+    "tagline": "A social world map to share and track a song.",
+    "link": "http://beginnings.wearebrightly.com",
+    "date": "Early 2013",
+    "published": true
+  },
+  "nononono": {
+    "title": "Nononono",
+    "tagline": "Share your opinion with all of the conviction.",
+    "link": "http://nononono.co",
+    "date": "Early 2013",
+    "published": true
+  },
   "you-are-a-developer": {
     "title": "You Are A Developer",
     "tagline": "The companion site to my 2012 Web Directions talk.",
@@ -134,11 +126,31 @@
     "date": "Late 2012",
     "published": true
   },
-  "wds13": {
-    "title": "Web Directions South 2013",
-    "tagline": "The conference site for the 2013 Web Directions South.",
-    "link": "http://webdirections.org/wds13",
-    "date": "Mid 2013",
+  "the-98-against": {
+    "title": "The 98 Against",
+    "tagline": "Equality, accountability and screen scraping.",
+    "link": "http://the98against.com",
+    "date": "Late 2012",
+    "published": true
+  },
+  "moran-and-cato": {
+    "title": "Moran & Cato",
+    "tagline": "A collective live music project.",
+    "link": "http://moranandcato.com",
+    "date": "Late 2012",
+    "published": true
+  },
+  "brightly": {
+    "title": "Brightly",
+    "tagline": "A website for my music project, Brightly",
+    "date": "Late 2011",
+    "published": true
+  },
+  "goodfilms": {
+    "title": "Goodfilms",
+    "tagline": "A social film site for finding and sharing movies.",
+    "link": "http://goodfil.ms",
+    "date": "Early 2011",
     "published": true
   }
 }

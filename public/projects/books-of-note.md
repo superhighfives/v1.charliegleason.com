@@ -1,0 +1,5 @@
+Ever since I first picked up [Letters of Note](http://booksofnote.com/book/letters-of-note) while working with [Unbound](http://unbound.co.uk), I have been a huge fan of Shaun Usher's work.
+
+When he approached me to put together [a site to showcase his Books of Note](http://booksofnote.com), I jumped at the chance to do justice to his incredible collection of letters and lists.
+
+Harnessing the power of [React](http://react.org), [React-Router](https://github.com/rackt/react-router) and [Express](http://expressjs.com/), Books of Note is a universal JavaScript application—that is, it uses the same code base for the client side as the server side. Combining that with [Webpack](https://webpack.github.io/) and hot reloading meant more time could be spent on finessing the design and user experience—not just on wiring the front and back-end together.

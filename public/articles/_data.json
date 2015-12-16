@@ -2,7 +2,7 @@
   "index": {
     "title": "Articles"
   },
-  "css-modules-jspm-react-joy" : {
+  "css-modules-jspm-react-joy": {
     "title": "CSS Modules, JSPM, React, joy",
     "tagline": "A tutorial on writing cleaner, happier CSS",
     "hero": true,
@@ -15,7 +15,7 @@
     },
     "published": false
   },
-  "the-joy-of-memcached" : {
+  "the-joy-of-memcached": {
     "title": "The Joy Of Memcached",
     "tagline": "Or how to avoid rate limiting while serving up some super speedy third party data",
     "hero": true,
@@ -32,12 +32,12 @@
     },
     "published": false
   },
-  "2014-in-retrospect" : {
+  "2014-in-retrospect": {
     "title": "2014 In Retrospect",
     "hero": true,
     "date": "17 December 2014"
   },
-  "the-web-audio-api" : {
+  "the-web-audio-api": {
     "title": "The Web Audio API",
     "tagline": "Or how to make thing pretty things from pretty sounds",
     "hero": true,
@@ -49,12 +49,12 @@
       }
     }
   },
-  "deploying-to-github-pages-with-gulp" : {
+  "deploying-to-github-pages-with-gulp": {
     "title": "Deploying To Github Pages With Gulp",
     "hero": true,
     "date": "19 September 2014"
   },
-  "harp-gulp-and-browsersync" : {
+  "harp-gulp-and-browsersync": {
     "title": "Harp, Gulp And BrowserSync",
     "tagline": "Or how I have a weird enthusiasm for static site generators",
     "hero": true,
@@ -66,7 +66,7 @@
       }
     }
   },
-  "2013-in-retrospect" : {
+  "2013-in-retrospect": {
     "title": "2013 In Retrospect",
     "hero": true,
     "date": "31 December 2013"
