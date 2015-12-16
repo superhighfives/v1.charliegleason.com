@@ -92,21 +92,18 @@
 <p>Which is good, because I can never seem to pull together the £2,000 it would take to get a halfway decent video made.</p>
 <p>So, when the going gets tough, get creative.</p>
 <hr>
-<h2>Tweetflight and Preflight Nerves</h2>
-<p><img src="/images/articles/the-web-audio-api/image-tweetflight.jpg" alt="Preflight Nerves, affectionately titled Tweetflight."></p>
+<h2>Tweetflight and Preflight Nerves</h2><p><img src="/images/articles/the-web-audio-api/image-tweetflight.jpg" alt="Preflight Nerves, affectionately titled Tweetflight."></p>
 <p>For our first single, <a href="http://tweetflight.wearebrightly.com">Preflight Nerves</a>, I used the Twitter API and HTML5 video to make an interactive tweet-powered <a href="http://tweetflight.wearebrightly.com">giant internet karaoke session</a>. With over half a million views, the response was really wild and I am proud of what it achieved. But afterwards I felt a bit lost on what to do next, so we recorded a <a href="http://music.wearebrightly.com/album/the-greylings">really stripped back EP</a> while we took some time to regroup.</p>
 <p>Then I moved to London. <a href="http://wearebrightly.com">Brightly</a> continued via email and Dropbox, and in March I flew to Australia to make our second record. We hit the studio running, and ended up with <a href="http://music.wearebrightly.com/album/oh-infinity">Oh, Infinity</a>.</p>
 <p>We decided on the first single, <a href="https://soundcloud.com/wearebrightly/true">True</a>, and the question came up again: what would we do for a video? I had experimented with [gifs and Giphy][fox], Vine videos, illustrations, SVGs and wearable sensors, but it never quite seemed to click. And I had no idea what to do next.</p>
 <hr>
-<h2>Back to the drawing board</h2>
-<p>Before Christmas I got <a href="https://www.flickr.com/photos/superhighfives/sets/72157637091939475/">engaged in Iceland</a>, which was pretty great. I also took a lot of footage while we drove around, weaving between snowy mountains and <a href="http://en.wikipedia.org/wiki/Gullfoss">huge waterfalls</a> and slow moving glaciers and all of the beers.</p>
+<h2>Back to the drawing board</h2><p>Before Christmas I got <a href="https://www.flickr.com/photos/superhighfives/sets/72157637091939475/">engaged in Iceland</a>, which was pretty great. I also took a lot of footage while we drove around, weaving between snowy mountains and <a href="http://en.wikipedia.org/wiki/Gullfoss">huge waterfalls</a> and slow moving glaciers and all of the beers.</p>
 <p><img src="/images/articles/the-web-audio-api/image-smoke.jpg" alt="I think that&#39;s steam?"></p>
 <p><img src="/images/articles/the-web-audio-api/image-road.jpg" alt="This, I know, is a road."></p>
 <p>Such mountain. Very snow. But I digress.</p>
 <p>I took all the footage and cut it together, created some fractal-esque visuals with filters, and used <a href="http://angularjs.org/">Angular.js</a> to display the lyrics as they&#39;re sung. I timed it using a <a href="http://true.wearebrightly.com/data/data.json">pretty simple json file</a>, watched it through, and felt... kind of disappointed. It was pretty, but it wasn&#39;t gripping. There was nothing new or interesting there, and I had spent a while fiddling with it. I felt like I was sinking time without cracking the core problem—there was nothing really dynamic happening.</p>
 <hr>
-<h2>A love letter</h2>
-<p>I have spent a lot of my life talking about how incredible <a href="https://twitter.com/@glenmaddern">Glen Maddern</a> is. Aside from being just the raddest dude, his <a href="http://glenmaddern.com/">work</a> is incredible, groundbreaking and deeply passionate.</p>
+<h2>A love letter</h2><p>I have spent a lot of my life talking about how incredible <a href="https://twitter.com/@glenmaddern">Glen Maddern</a> is. Aside from being just the raddest dude, his <a href="http://glenmaddern.com/">work</a> is incredible, groundbreaking and deeply passionate.</p>
 <p>I remembered that he mentioned the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">web audio API</a> had been making some strides, and I was curious whether I could try and visualise the audio (taken from a video object) to display using canvas.</p>
 <p>At the core is this piece of code:</p>
 <pre><code class="language-javascript">//Make sure AudioContext is available (Webkit uses a vendor prefix)
@@ -114,7 +111,8 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext
 
 //createMediaElementSource means we can grab the audio from our video
 context = new AudioContext()
-sourceNode = context.createMediaElementSource(video[0])</code></pre>
+sourceNode = context.createMediaElementSource(video[0])
+</code></pre>
 <p>Using <code>createMediaElementSource()</code> I was able to visualise the frequencies direct from the audio, within the video element, in real time. And that&#39;s a simple use of the API—the possibilities for experimentation are essentially endless.</p>
 <p>(Unfortunately Safari doesn&#39;t play nice, due to a bug in the way it returns audio data from <code>createMediaElementSource()</code>. It&#39;s <a href="https://twitter.com/marcoarment/status/489521301980069892">pretty widely known</a> and it doesn&#39;t looks like it&#39;ll get fixed <a href="http://trac.webkit.org/search?q=createMediaElementSource">any time soon</a>.)</p>
 <p>A day later <a href="http://true.wearebrightly.com">True</a> was essentially done.</p>
@@ -122,12 +120,10 @@ sourceNode = context.createMediaElementSource(video[0])</code></pre>
 <p><img src="/images/articles/the-web-audio-api/image-true-02.jpg" alt="The web audio API visualisation."></p>
 <p>I also used <a href="http://snapsvg.io/">SnapSVG</a> for the opening animation, which is an incredibly robust library for manipulating and animating SVGs.</p>
 <hr>
-<h2>Faith restored</h2>
-<p>When I started <a href="http://true.wearebrightly.com">True</a> I struggled with finding inspiration. It was that quiet nagging feeling that chews away at your self esteem until you&#39;re sure you&#39;ll never create anything again and all of your achievements will inevitably, slowly, inexorably turn to dust and ash.</p>
+<h2>Faith restored</h2><p>When I started <a href="http://true.wearebrightly.com">True</a> I struggled with finding inspiration. It was that quiet nagging feeling that chews away at your self esteem until you&#39;re sure you&#39;ll never create anything again and all of your achievements will inevitably, slowly, inexorably turn to dust and ash.</p>
 <p>Worry not. The web audio API, however, pulled me from that spiral of crippling self doubt. So thanks, web audio API.</p>
 <p>If you&#39;re keen to delve in, <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">HTML5Rocks</a> have a <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">great tutorial</a> explaining the API in detail, including some super nifty examples.</p>
 <p>Oh, and you can watch <a href="http://true.wearebrightly.com">True</a> here.</p>
-
     </div>
     
   <dl class="dl-horizontal meta-footer">

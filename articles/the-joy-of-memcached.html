@@ -92,22 +92,18 @@
 <p>The problem, therefore, is one of implementation. Let&#39;s say you hit the rate limit. You&#39;ll get an error on any subsequent requests until the rate limit is revoked. That could be ten minutes, an hour, half a day. Not exactly ideal. For a more practical example you can check out <a href="https://dev.twitter.com/rest/public/rate-limiting">twitter&#39;s rules</a>. And if you&#39;re not caching prior successful responses, your only recourse is to display a message like &quot;Oops, looks like we couldn&#39;t get the latest lolcopter tweets. Why not check their site?&quot; with a link.</p>
 <p>Ew.</p>
 <hr>
-<h2>Do not abandon hope, all ye who enter here</h2>
-<p>So we have a problem. But fear not, there are solutions. You could store the most recent response and fall back to in case the rate limit is exceeded. I&#39;ve seen this done by writing a json file to the server, and reading from that as a fallback. But it feels clunky, and you&#39;re repeatedly reading from the disk.</p>
+<h2>Do not abandon hope, all ye who enter here</h2><p>So we have a problem. But fear not, there are solutions. You could store the most recent response and fall back to in case the rate limit is exceeded. I&#39;ve seen this done by writing a json file to the server, and reading from that as a fallback. But it feels clunky, and you&#39;re repeatedly reading from the disk.</p>
 <p>A better option is to set up a cron job to hit the API once every minute or so, and use <strong>memcached</strong> to store for easy retreival. That way you&#39;re separating your components in a meaningful way. One aspect of your application is going out, grabbing new data and storing it in memcached. Another aspect is grabbing the most recent data from memcached and serving it to the user.</p>
 <p>You&#39;re not only avoiding rate limits, but also serving up lightning fast third party data by pre-offloading the getting to a cron job.</p>
 <hr>
-<h2>Memwhat?</h2>
-<p>So, what is <a href="http://memcached.org/">memcached</a>?</p>
+<h2>Memwhat?</h2><p>So, what is <a href="http://memcached.org/">memcached</a>?</p>
 <p>It&#39;s a free, open source, high-performance distributed memory object caching system. Their words. In short, it allows you to store small chunks of data in-memory as key-value pairs. And you can pull them out super quickly, meaning everything from database calls to API results can be held on your server.</p>
 <p>It has implementations in Ruby, Node, and a ton of other less hipster languages. And it&#39;s just great.</p>
 <hr>
-<h2>So let&#39;s build something</h2>
-<p>We&#39;re going to build a free Heroku-hosted Ruby app, running memcached, to store and serve tweets with the word &quot;lolcopter&quot; in them.</p>
+<h2>So let&#39;s build something</h2><p>We&#39;re going to build a free Heroku-hosted Ruby app, running memcached, to store and serve tweets with the word &quot;lolcopter&quot; in them.</p>
 <p>Let&#39;s get started.</p>
 <p>You&#39;ll need some files. First off, a <code>Gemfile</code>.</p>
-<h3>Gemfile</h3>
-<pre><code class="language-ruby">source &#39;https://rubygems.org&#39;
+<h3>Gemfile</h3><pre><code class="language-ruby">source &#39;https://rubygems.org&#39;
 
 gem &#39;thin&#39;
 gem &#39;sinatra&#39;
@@ -119,30 +115,30 @@ gem &#39;twitter&#39;
 group :development do
   gem &#39;heroku&#39;
   gem &#39;foreman&#39;
-end</code></pre>
+end
+</code></pre>
 <p>That covers all our bases. <strong>Thin</strong>, the server, running <strong>Sinatra</strong>, the framework, <strong>Dalli</strong>, the memcache library, and a <strong>json</strong> gem, to serve the goods.</p>
 <p>We&#39;ll also use the <strong>Twitter</strong> gem to access the Twitter API for those tasty, tasty lolcopter tweets.</p>
 <p>On development we&#39;ll need <strong>Heroku</strong> to communicate with our app, and <strong>Foreman</strong> to test it.</p>
 <p>You are doing great.</p>
-<h3>Procfile</h3>
-<pre><code class="language-ruby">web: bundle exec ruby app.rb -p $PORT</code></pre>
+<h3>Procfile</h3><pre><code class="language-ruby">web: bundle exec ruby app.rb -p $PORT
+</code></pre>
 <p>As <strong>Heroku</strong> themselves put it, <code>Procfile</code> is a mechanism for declaring what commands are run by your application on Heroku. It&#39;s a pretty simple process for a web server, which will run <code>app.rb</code>.</p>
-<h3>.env</h3>
-<pre><code>MEMCACHIER_SERVERS=localhost
+<h3>.env</h3><pre><code>MEMCACHIER_SERVERS=localhost
 
 TWITTER_CONSUMER_KEY=KEY_GOES_HERE
 TWITTER_CONSUMER_SECRET=SECRET_GOES_HERE
 TWITTER_OAUTH_TOKEN=TOKEN_GOES_HERE
-TWITTER_OAUTH_TOKEN_SECRET=TOKEN_SECRET_GOES_HERE</code></pre>
-<p>The <code>.env</code> file holds your environment variables. You&#39;ll need to set these on Heroku when you eventually deploy, but for local development, these will be available within the application automagically.</p>
+TWITTER_OAUTH_TOKEN_SECRET=TOKEN_SECRET_GOES_HERE
+</code></pre><p>The <code>.env</code> file holds your environment variables. You&#39;ll need to set these on Heroku when you eventually deploy, but for local development, these will be available within the application automagically.</p>
 <p>The first line tells memcached where access its server, while the second set holds the credentials you&#39;ll need to access the Twitter search. Each API will have itself own version of the above, depending on their authentication process.</p>
-<h3>app.rb</h3>
-<p>So <code>app.rb</code> is the heart of the application, managing the web server side of things, and accessing the tweets stored in the cache. (Which, you&#39;re correct in noticing, we haven&#39;t actually gotten around to caching yet.)</p>
+<h3>app.rb</h3><p>So <code>app.rb</code> is the heart of the application, managing the web server side of things, and accessing the tweets stored in the cache. (Which, you&#39;re correct in noticing, we haven&#39;t actually gotten around to caching yet.)</p>
 <pre><code class="language-ruby">require &#39;sinatra&#39;
 require &#39;dalli&#39;
 require &#39;json&#39;
 require &#39;newrelic_rpm&#39;
-require &#39;twitter&#39;</code></pre>
+require &#39;twitter&#39;
+</code></pre>
 <p><strong>Step 1:</strong> Let&#39;s require the libraries that we initially set out in our <code>Gemfile</code>.</p>
 <pre><code class="language-ruby">#libraries
 require_relative &#39;./lib/twitter_search&#39;
@@ -169,23 +165,21 @@ get &#39;/tweets.json&#39; do
   content_type :json
   tweets = cache.get(&#39;tweets&#39;)
   jsonp tweets
-end</code></pre>
+end
+</code></pre>
 <p>TODO: Explain app.rb. Simplify initially.</p>
 <ul>
 <li>Add the caching information</li>
 <li>Set up twitter api</li>
 </ul>
 <hr>
-<h2>So, now what?</h2>
-<ul>
+<h2>So, now what?</h2><ul>
 <li>Get it up on Heroku</li>
 <li>Set up the cron job / scheduler</li>
 <li>Marvel at the tweets</li>
 </ul>
 <hr>
-<h2>Finally?</h2>
-<p>Celebrate.</p>
-
+<h2>Finally?</h2><p>Celebrate.</p>
     </div>
     
   <dl class="dl-horizontal meta-footer">

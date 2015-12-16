@@ -92,55 +92,56 @@
 <p><a href="http://browsersync.io">BrowserSync</a> was the final piece of the puzzle, and I was primarily curious about its much touted ability to inject CSS changes without reloading the page.</p>
 <p>So I dug in.</p>
 <hr>
-<h2>Setting it all up</h2>
-<p>So, we&#39;ll need <a href="http://gulpjs.com/">Gulp</a>, <a href="http://harpjs.com/">Harp</a> and <a href="http://browsersync.io">BrowserSync</a>.</p>
+<h2>Setting it all up</h2><p>So, we&#39;ll need <a href="http://gulpjs.com/">Gulp</a>, <a href="http://harpjs.com/">Harp</a> and <a href="http://browsersync.io">BrowserSync</a>.</p>
 <hr>
-<h3>Getting started with Gulp</h3>
-<p>The first thing I noticed, when checking out Gulp, was the simplicity. After wrestling with Grunt for so long, I was chuffed to see a single named function was all that&#39;s needed to get started.</p>
+<h3>Getting started with Gulp</h3><p>The first thing I noticed, when checking out Gulp, was the simplicity. After wrestling with Grunt for so long, I was chuffed to see a single named function was all that&#39;s needed to get started.</p>
 <p>(To be fair, I&#39;ve not written anything particularly onerous in Gulp, so that&#39;s a bit harsh.)</p>
 <p>First, make sure you&#39;ve got <a href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started">Gulp installed</a>.</p>
-<pre><code class="language-bash">npm install --global gulp</code></pre>
+<pre><code class="language-bash">npm install --global gulp
+</code></pre>
 <p>Then you&#39;ll need a <code>gulpfile.js</code> at the root of your project.</p>
 <pre><code class="language-javascript">var gulp = require(&#39;gulp&#39;);
 
 gulp.task(&#39;default&#39;, function() {
   console.log(&quot;Gulp lol look at me being rad.&quot;);
-});</code></pre>
+});
+</code></pre>
 <p>As it&#39;s the default task, just run <code>gulp</code>.</p>
-<pre><code class="language-javascript">gulp</code></pre>
+<pre><code class="language-javascript">gulp
+</code></pre>
 <hr>
-<h3>Getting started with Harp</h3>
-<p>Similarly, Harp is super straightforward.</p>
-<pre><code class="language-bash">sudo npm install -g harp</code></pre>
+<h3>Getting started with Harp</h3><p>Similarly, Harp is super straightforward.</p>
+<pre><code class="language-bash">sudo npm install -g harp
+</code></pre>
 <p>You can then use harp to generate the bones of a project.</p>
-<pre><code class="language-bash">harp init myproject</code></pre>
+<pre><code class="language-bash">harp init myproject
+</code></pre>
 <p>That will give you the barest of projects, using <a href="http://lesscss.org/">Less</a> for styles and <a href="http://jade-lang.com/">Jade</a> for HTML. Personally, I prefer <a href="http://sass-lang.com/">Sass</a> and <a href="http://embeddedjs.com/">EJS</a>, but it&#39;s not hard to change things over. Harp tends towards convention over configuration, so all you really need is a single .ejs or .jade page and you&#39;re good to go.</p>
 <hr>
-<h3>Getting started with BrowserSync</h3>
-<p>Finally, <a href="http://browsersync.io">BrowserSync</a>.</p>
+<h3>Getting started with BrowserSync</h3><p>Finally, <a href="http://browsersync.io">BrowserSync</a>.</p>
 <p>Technically you don&#39;t need to install this globally, unless you&#39;re using it separately from the command line, so you can skip this step and just have it in your npm <code>package.json</code>.</p>
 <p>But, if you&#39;re keen:</p>
-<pre><code class="language-bash">npm install -g browser-sync</code></pre>
+<pre><code class="language-bash">npm install -g browser-sync
+</code></pre>
 <p>For this example we&#39;ll run BrowserSync via Gulp, so you don&#39;t need to do anything else at this point. You can run from the command line though, using the <code>browser-sync</code> command.</p>
 <hr>
-<h2>Setting the scene</h2>
-<p>So, there are some dependencies involved. To make life a little easier, I&#39;ve pulled together the cleverly titled boilerplate, <a href="https://github.com/superhighfives/harp-gulp-browsersync-boilerplate">harp-gulp-browsersync-boilerplate</a>. You can use it to get the whole thing up and running straight away, and then I&#39;ll go through and explain what&#39;s happening. Cool? Cool.</p>
+<h2>Setting the scene</h2><p>So, there are some dependencies involved. To make life a little easier, I&#39;ve pulled together the cleverly titled boilerplate, <a href="https://github.com/superhighfives/harp-gulp-browsersync-boilerplate">harp-gulp-browsersync-boilerplate</a>. You can use it to get the whole thing up and running straight away, and then I&#39;ll go through and explain what&#39;s happening. Cool? Cool.</p>
 <p>Let&#39;s take a moment to look at a lolcat.</p>
 <p><img src="/images/articles/harp-gulp-and-browsersync/image-lolcat.jpg" alt="Phew."></p>
 <p>That was awesome.</p>
 <p>So, Harp has a really great feature where you can use any repo as a boilerplate. To use my super-fancy repo, you just need the <code>--boilerplate</code> (or -b) option.</p>
-<pre><code class="language-bash">harp init src --boilerplate superhighfives/harp-gulp-browsersync-boilerplate</code></pre>
+<pre><code class="language-bash">harp init src --boilerplate superhighfives/harp-gulp-browsersync-boilerplate
+</code></pre>
 <p>Then, once it&#39;s downloaded (maybe make a tea or something?) you can jump into src and grab the dependencies.</p>
-<pre><code class="language-bash">npm install</code></pre>
+<pre><code class="language-bash">npm install
+</code></pre>
 <p>Maybe make another tea? You may be sick of tea by now. I&#39;m not confident in how much tea you drink each day, so I don&#39;t want to be presumptious.</p>
 <p>Finally, run <code>gulp</code>.</p>
 <p><img src="/images/articles/harp-gulp-and-browsersync/image-terminal.png" alt="An example of the terminal output you should probably see."></p>
 <p>Here&#39;s what is happening. Gulp fires up Harp on port 9000 (you can change that in the <code>gulpfile.js</code>), and BrowserSync proxies it, usually on 3000. So just hit up <code>localhost:3000</code> and you&#39;re ready to party. It&#39;s worth checking the output in your terminal though, as it will give you the definitive address.</p>
 <hr>
-<h2>Changing things, because you can</h2>
-<p>Now you can edit <code>main.sass</code> and the updates will happen in real-time. It&#39;s the same system that&#39;s currently running this blog, and you can see the full range of tasks (including deploying straight to <a href="https://pages.github.com/">Github Pages</a>) in the source <a href="https://github.com/superhighfives/charliegleason.com">over on Github</a>.</p>
+<h2>Changing things, because you can</h2><p>Now you can edit <code>main.sass</code> and the updates will happen in real-time. It&#39;s the same system that&#39;s currently running this blog, and you can see the full range of tasks (including deploying straight to <a href="https://pages.github.com/">Github Pages</a>) in the source <a href="https://github.com/superhighfives/charliegleason.com">over on Github</a>.</p>
 <p>This is the sound of you succeeding, you beautiful human.</p>
-
     </div>
     
   <dl class="dl-horizontal meta-footer">
