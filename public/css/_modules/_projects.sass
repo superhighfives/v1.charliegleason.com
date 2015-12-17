@@ -21,12 +21,28 @@
     border-bottom-color: $color-off-white
     .project-tagline
       opacity: 1
+    .project-thumb
+      transform: scale(1.1)
+      -webkit-transform: scale(1.1)
+      -moz-transform: scale(1.1)
+      -ms-transform: scale(1.1)
   .project-image
     position: relative
     margin-bottom: 12px
-    .img-responsive
-      max-width: auto
-      width: 100%
+    padding-bottom: 61.5%
+    height: 0
+    overflow: hidden
+    .project-thumb
+      transition: transform 0.3s
+      -webkit-transition: transform 0.3s
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
   .project-tagline
     opacity: 0
     transition: opacity 0.2s
@@ -36,7 +52,7 @@
     bottom: 0
     left: 0
     background-color: $color-black
-    background-color: rgba($color-black, 0.75)
+    background-color: rgba($color-black, 0.6)
     padding: 20px
     color: $color-white
   .project-title
