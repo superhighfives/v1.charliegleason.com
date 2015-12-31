@@ -5,3 +5,5 @@ As a grammy-nominated engineer, Andrei has worked on a huge number of records—
 We used Git to manage version control and deployments, meaning Andrei could easily make updates to text without having to fiddle with [FTP or anything horrible](http://charliegleason.com/articles/deploying-to-github-pages-with-gulp) like that.
 
 With a focus on mobile-friendly features (I'm frowning at you, lazy loading) and gesture based navigation, the site lets the artwork of each release shine while embracing the aestetic of Andrei's brand.
+
+Plus it was a lot of fun.
