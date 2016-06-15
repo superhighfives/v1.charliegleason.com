@@ -2,6 +2,13 @@
   "index": {
     "title": "Projects"
   },
+  "rugby": {
+    "title": "Rugby",
+    "tagline": "A Giphy-powered homage to the humble GIF.",
+    "link": "https://rugby.wearebrightly.com",
+    "date": "Early 2016",
+    "published": true
+  },
   "books-of-note": {
     "title": "Books of Note",
     "tagline": "A React-powered universal app for Shaun Usher's incredible Books of Note.",
