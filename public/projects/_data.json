@@ -2,6 +2,19 @@
   "index": {
     "title": "Projects"
   },
+  "koya": {
+    "title": "Kōya",
+    "tagline": "An interactive, generative piece of art for musician Braille Face.",
+    "link": "https://koya.brailleface.co",
+    "date": "Late 2016",
+    "published": true,
+    "acknowledgements": {
+      "glenmaddern": {
+        "name": "Ian MacLarty",
+        "role": "designed and developed the WebGL side of the project"
+      }
+    }
+  },
   "rugby": {
     "title": "Rugby",
     "tagline": "A Giphy-powered homage to the humble GIF.",
