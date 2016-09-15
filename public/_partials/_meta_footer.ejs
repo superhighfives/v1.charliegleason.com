@@ -13,5 +13,14 @@
       </dd>
       <% } %>
     <% } %>
+    <% if(typeof awards != "undefined") { %>
+      <dt>Awards</dt>
+      <% for(slug in awards) { %>
+      <% var award = awards[slug] %>
+      <dd>
+        <a href="<%- slug %>" title="<%- title %> - <%- award.name %>"><%- award.name %></a>
+      </dd>
+      <% } %>
+    <% } %>
   </dl>
 <% } %>

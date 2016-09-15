@@ -8,8 +8,16 @@
     "link": "https://koya.brailleface.co",
     "date": "Late 2016",
     "published": true,
+    "awards": {
+      "https://thefwa.com/cases/koya": {
+        "name": "The FWA - Site of the Day"
+      },
+      "https://www.awwwards.com/sites/koya": {
+        "name": "Awwwards - Honourable Mention"
+      }
+    },
     "acknowledgements": {
-      "glenmaddern": {
+      "muclorty": {
         "name": "Ian MacLarty",
         "role": "designed and developed the WebGL side of the project"
       }
@@ -20,7 +28,12 @@
     "tagline": "A Giphy-powered homage to the humble GIF.",
     "link": "https://rugby.wearebrightly.com",
     "date": "Early 2016",
-    "published": true
+    "published": true,
+    "awards": {
+      "https://thefwa.com/cases/rugby": {
+        "name": "The FWA - Site of the Day"
+      }
+    }
   },
   "books-of-note": {
     "title": "Books of Note",
@@ -55,7 +68,12 @@
     "tagline": "An interactive WebGL music video.",
     "link": "https://iwillneverletyougo.com",
     "date": "Late 2015",
-    "published": true
+    "published": true,
+    "awards": {
+      "https://thefwa.com/cases/i-will-never-let-you-go": {
+        "name": "The FWA - Site of the Day"
+      }
+    }
   },
   "lets-run-away-together": {
     "title": "Let's Run Away Together",
@@ -78,7 +96,7 @@
     "date": "Late 2013",
     "published": true
   },
-    "brightly-deux": {
+  "brightly-deux": {
     "title": "Brightly 2.0",
     "tagline": "A new website for my music project, Brightly.",
     "date": "Late 2013",
@@ -123,7 +141,19 @@
     "tagline": "An interactive tweet-powered music video.",
     "link": "http://tweetflight.wearebrightly.com",
     "date": "Early 2013",
-    "published": true
+    "published": true,
+    "awards": {
+      "http://www.awwwards.com/sites/tweetflight": {
+        "name": "Awwwards - Site of the Day"
+      },
+      "http://thefwa.com/cases/tweetflight": {
+        "name": "The FWA - Site of the Day"
+      },
+      "https://www.thinkwithgoogle.com/campaigns/brightly-tweetflight.html": {
+        "name": "Think With Google"
+      }
+    }
+
   },
   "beginnings-and-endings": {
     "title": "Beginnings & Endings",
