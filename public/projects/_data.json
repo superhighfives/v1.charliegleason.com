@@ -2,6 +2,12 @@
   "index": {
     "title": "Projects"
   },
+  "ceres": {
+    "title": "Ceres",
+    "tagline": "A time sensitive experiment celebrating the lyrics of Ceres' new album.",
+    "date": "Late 2016",
+    "published": true
+  },
   "koya": {
     "title": "Kōya",
     "tagline": "An interactive, generative piece of art for musician Braille Face.",
@@ -105,7 +111,6 @@
   "codename": {
     "title": "Codename",
     "tagline": "The central hub for our agency collective.",
-    "link": "http://codename.io",
     "date": "Mid 2013",
     "published": true
   },

@@ -1,3 +1,1 @@
-The [Codename](http://codename.io/) site is anchored by a strict grid layout, and a simple colour scheme. It acts as a central hub for our agency, and lists our skills, latest projects and contact details.
-
-Pretty simple, really.
+The [Codename](http://codename.io/) site was anchored by a strict grid layout, and a simple colour scheme. It acted as a central hub for our agency, and listed our skills, latest projects and contact details.
