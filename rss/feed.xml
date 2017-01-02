@@ -63,7 +63,7 @@
 </ul>
 <p>Onwards, 2015.</p>
 ]]></description>
-            <pubDate>Wed Dec 17 2014 00:00:00 GMT+1100 (AEDT)</pubDate>
+            <pubDate>Wed Dec 17 2014 00:00:00 GMT+0000 (GMT)</pubDate>
             <link>http://charliegleason.com/articles/[object Object]</link>
             <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
           </item>
@@ -114,7 +114,7 @@ sourceNode = context.createMediaElementSource(video[0])
 <p>If you&#39;re keen to delve in, <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">HTML5Rocks</a> have a <a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">great tutorial</a> explaining the API in detail, including some super nifty examples.</p>
 <p>Oh, and you can watch <a href="http://true.wearebrightly.com">True</a> here.</p>
 ]]></description>
-            <pubDate>Thu Oct 16 2014 00:00:00 GMT+1100 (AEDT)</pubDate>
+            <pubDate>Thu Oct 16 2014 00:00:00 GMT+0100 (BST)</pubDate>
             <link>http://charliegleason.com/articles/[object Object]</link>
             <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
           </item>
@@ -207,7 +207,7 @@ git checkout master
 <p><img src="/images/articles/deploying-to-github-pages-with-gulp/image-yes.jpg" alt="Yes, Github Pages. Yes."></p>
 <p>You&#39;re great. Good for you. If you have any problems, I can probably help. Just <a href="mailto:hi@charliegleason.com">email me</a>.</p>
 ]]></description>
-            <pubDate>Fri Sep 19 2014 00:00:00 GMT+1000 (AEST)</pubDate>
+            <pubDate>Fri Sep 19 2014 00:00:00 GMT+0100 (BST)</pubDate>
             <link>http://charliegleason.com/articles/[object Object]</link>
             <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
           </item>
@@ -276,7 +276,7 @@ gulp.task(&#39;default&#39;, function() {
 <h2>Changing things, because you can</h2><p>Now you can edit <code>main.sass</code> and the updates will happen in real-time. It&#39;s the same system that&#39;s currently running this blog, and you can see the full range of tasks (including deploying straight to <a href="https://pages.github.com/">Github Pages</a>) in the source <a href="https://github.com/superhighfives/charliegleason.com">over on Github</a>.</p>
 <p>This is the sound of you succeeding, you beautiful human.</p>
 ]]></description>
-            <pubDate>Mon Aug 18 2014 00:00:00 GMT+1000 (AEST)</pubDate>
+            <pubDate>Mon Aug 18 2014 00:00:00 GMT+0100 (BST)</pubDate>
             <link>http://charliegleason.com/articles/[object Object]</link>
             <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
           </item>
@@ -313,7 +313,7 @@ gulp.task(&#39;default&#39;, function() {
 </ul>
 <p>Onwards, 2014! Onwards!</p>
 ]]></description>
-            <pubDate>Tue Dec 31 2013 00:00:00 GMT+1100 (AEDT)</pubDate>
+            <pubDate>Tue Dec 31 2013 00:00:00 GMT+0000 (GMT)</pubDate>
             <link>http://charliegleason.com/articles/[object Object]</link>
             <guid isPermaLink="true">http://charliegleason.com/articles/[object Object]</guid>
           </item>
