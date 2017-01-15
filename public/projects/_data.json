@@ -2,6 +2,13 @@
   "index": {
     "title": "Projects"
   },
+  "sandpit": {
+    "title": "Sandpit",
+    "tagline": "A playground for creative coding using JavaScript and the canvas element.",
+    "link": "https://sandpitjs.com",
+    "date": "Early 2017",
+    "published": true
+  },
   "ceres": {
     "title": "Ceres",
     "tagline": "A time sensitive experiment celebrating the lyrics of Ceres' new album.",
