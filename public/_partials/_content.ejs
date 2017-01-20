@@ -7,14 +7,14 @@
 <div class="col-md-offset-2 col-md-10">
   <div class="heading">
     <ul class="list-unstyled meta-header">
-      <li><h1 class="meta-title"><%- title %></h1><li>
+      <li><h1 class="meta-title"><%- title %></h1>
       <% if(typeof tagline != "undefined") { %>
         <li class="meta-tagline"><%- tagline %></li>
       <% } %>
     </ul>
   </div>
 </div>
-  
+
 <div class="col-md-2">
   <div class="sidebar">
     <p><%- partial("../_shared/_tagline") %></p>
@@ -36,7 +36,7 @@
     <div class="content">
       <%- yield %>
       <% if(typeof link != "undefined") { %>
-        <a class="project-link" href="<%- link %>"><span class="icon">link</span> View the project</a> 
+        <a class="project-link" href="<%- link %>"><span class="icon">link</span> View the project</a>
       <% } %>
     </div>
     <%- partial("_meta_footer") %>
